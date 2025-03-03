@@ -1,0 +1,11 @@
+main {
+    gap: 12px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 840px;
+    padding: 80px 24px;
+    flex-direction: column;
+}
+main > span > a {
+    text-decoration: underline;
+}
