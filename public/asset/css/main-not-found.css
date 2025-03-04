@@ -6,6 +6,11 @@ main {
     padding: 80px 24px;
     flex-direction: column;
 }
+main > a {
+    color: #afafaf;
+    font-size: 13px;
+    font-weight: 300;
+}
 main > span > a {
     text-decoration: underline;
 }
