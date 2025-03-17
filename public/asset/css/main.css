@@ -57,6 +57,12 @@ header > .card > .card-detail > .card-link {
     flex-wrap: wrap;
     margin-top: 4px;
 }
+header > .card > .card-detail > .card-link > a > svg {
+    transition: fill 0.25s ease-in-out;
+}
+header > .card > .card-detail > .card-link > a:hover > svg {
+    fill: #5f5f5f;
+}
 
 main {
     gap: 48px;
@@ -103,16 +109,29 @@ main > section#tab > .column-all > div.scrolled {
     box-shadow: 0 8px 24px #1f1f1f22;
 }
 main > section#tab > .column-all > div > a {
+    display: flex;
     color: #afafaf;
     padding: 4px 20px;
+    align-items: center;
     border-radius: 999px;
     text-decoration: none;
+    justify-content: center;
     transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 main > section#tab > .column-all > div > a:hover {
     color: #5f5f5f;
     cursor: pointer;
     background: #fefefe;
+}
+main > section#tab > .column-all > div > a:focus {
+    color: #5f5f5f;
+    background: #fefefe;
+}
+main > section#tab > .column-all > div > a > svg {
+    transition: stroke 0.25s ease-in-out;
+}
+main > section#tab > .column-all > div > a:focus > svg {
+    stroke: #5f5f5f;
 }
 
 main > section#about > .column-left {
@@ -124,14 +143,58 @@ main > section#about > .column-right {
 main > section#about > .column-left > div > span > span {
     margin: 0 4px;
 }
+main > section#about > div > div > h3 {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+}
 
-main > section#work > .column-all > .list,
+main > section#principle > div > p > svg {
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+main > section#work > .column-all > .list {
+    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+main > section#work > .column-all > .list > .card {
+    gap: 4px;
+    display: flex;
+    padding: 12px;
+    background: #fafafa;
+    border-radius: 12px;
+    flex-direction: column;
+    border: 1px solid #cfcfcf;
+}
+main > section#work > .column-all > .list > .card > img {
+    object-fit: cover;
+    aspect-ratio: 1.4;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #cfcfcf;
+}
+main > section#achievement > .column-all > .list > .card > img {
+    object-position: top;
+}
+main > section#work > .column-all > .list > .card > span,
+main > section#work > .column-all > .list > .card > span > a {
+    font-size: 12px;
+}
+main > section#work > .column-all > .list > .card > p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
 main > section#achievement > .column-all > .list {
     gap: 8px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-main > section#work > .column-all > .list > .card,
 main > section#achievement > .column-all > .list > .card {
     gap: 4px;
     display: flex;
@@ -141,38 +204,23 @@ main > section#achievement > .column-all > .list > .card {
     flex-direction: column;
     border: 1px solid #cfcfcf;
 }
-main > section#work > .column-all > .list > .card > img,
 main > section#achievement > .column-all > .list > .card > img {
     object-fit: cover;
-    aspect-ratio: 1.5;
+    aspect-ratio: 1.4;
     border-radius: 6px;
     margin-bottom: 8px;
     border: 1px solid #cfcfcf;
 }
-main > section#work > .column-all > .list > .card > span,
-main > section#work > .column-all > .list > .card > span > a,
 main > section#achievement > .column-all > .list > .card > span,
 main > section#achievement > .column-all > .list > .card > span > a {
     font-size: 12px;
 }
-main > section#work > .column-all > .list > .card > p,
 main > section#achievement > .column-all > .list > .card > p {
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
-}
-main > section#work > .column-all > .list > .card > a,
-main > section#achievement > .column-all > .list > .card > a {
-    color: #5f5f5f;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-}
-main > section#work > .column-all > .list > .card > a:hover,
-main > section#achievement > .column-all > .list > .card > a:hover {
-    cursor: pointer;
 }
 
 footer {
@@ -183,6 +231,10 @@ footer > span {
     margin: 0 auto;
     display: block;
     max-width: 840px;
+}
+footer > span > a {
+    color: #afafaf;
+    text-decoration: none;
 }
 
 @media (max-width: 640px) {
