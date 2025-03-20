@@ -40,7 +40,11 @@ header > .card > .card-detail > .card-greeting > span > span {
     color: #afafaf;
 }
 header > .card > .card-detail > .card-greeting > span > span#js-emoji {
+    font-size: 12px;
     margin-right: 2px;
+}
+header > .card > .card-detail > .card-greeting > span > span#js-greeting {
+    font-size: 12px;
 }
 header > .card > .card-detail > p {
     color: #5f5f5f;
