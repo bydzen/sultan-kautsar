@@ -1,16 +1,19 @@
 main {
-    gap: 12px;
+    gap: 48px;
     display: flex;
     margin: 0 auto;
     max-width: 840px;
     padding: 80px 24px;
     flex-direction: column;
 }
-main > a {
+main > div > h1 {
+    margin-bottom: 12px;
+}
+main > div > a {
     color: #afafaf;
     font-size: 13px;
     font-weight: 300;
 }
-main > span > a {
+main > div > span > a {
     text-decoration: underline;
 }
