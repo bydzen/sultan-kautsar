@@ -236,6 +236,9 @@ footer > span {
     display: block;
     max-width: 840px;
 }
+footer > span > span {
+    color: #afafaf;
+}
 footer > span > a {
     color: #afafaf;
     text-decoration: none;
