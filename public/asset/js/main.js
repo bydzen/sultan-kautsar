@@ -18,7 +18,7 @@ function updateGreeting() {
 updateGreeting();
 
 document.addEventListener("scroll", function () {
-    let target = document.querySelector("main > section#tab > .column-all > div");
+    let target = document.querySelector("main > #tab > .column-all");
     if (target) {
         let rect = target.getBoundingClientRect();
         if (rect.top <= 12) {
@@ -30,7 +30,7 @@ document.addEventListener("scroll", function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll("main > section#tab > .column-all > div a");
+    const links = document.querySelectorAll("main > #tab > .column-all > div a");
     const offset = 80;
     links.forEach((link) => {
         link.addEventListener("click", (e) => {
@@ -50,3 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+function toggleMenu() {
+    const containerMenu = document.querySelector(".menu-list");
+    containerMenu.classList.toggle("active");
+}
