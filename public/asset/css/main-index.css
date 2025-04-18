@@ -1,0 +1,202 @@
+main > #tab {
+    gap: 8px;
+    top: 12px;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    max-width: max-content;
+    flex-direction: column;
+    justify-content: center;
+}
+main > #tab > .column-all:not(.menu-list) {
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+main > #tab > .column-all > .anchors {
+    gap: 4px;
+    padding: 4px;
+    background: #f5f5f5;
+    flex-direction: row;
+    border-radius: 999px;
+    border: 1px solid #cfcfcf;
+    transition: box-shadow 0.25s ease-in-out;
+}
+main > #tab > .column-all.scrolled > div {
+    box-shadow: 0 8px 24px #1f1f1f22;
+}
+main > #tab > .column-all > .anchors > a {
+    display: flex;
+    color: #afafaf;
+    padding: 4px 20px;
+    align-items: center;
+    border-radius: 999px;
+    text-decoration: none;
+    justify-content: center;
+    transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+main > #tab > .column-all > .anchors > a:hover {
+    color: #5f5f5f;
+    cursor: pointer;
+    background: #fefefe;
+}
+main > #tab > .column-all > .anchors > a:focus {
+    color: #5f5f5f;
+    background: #fefefe;
+}
+main > #tab > .column-all > .anchors > a > svg {
+    transition: stroke 0.25s ease-in-out;
+}
+main > #tab > .column-all > .anchors > a:focus > svg {
+    stroke: #5f5f5f;
+}
+main > #tab > .column-all > .menu {
+    gap: 4px;
+    padding: 4px;
+    background: #f5f5f5;
+    flex-direction: row;
+    border-radius: 999px;
+    border: 1px solid #cfcfcf;
+    transition: box-shadow 0.25s ease-in-out;
+}
+main > #tab > .column-all > .menu > a {
+    display: flex;
+    color: #afafaf;
+    padding: 4px 20px;
+    align-items: center;
+    border-radius: 999px;
+    text-decoration: none;
+    justify-content: center;
+    transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+main > #tab > .column-all > .menu > a:hover,
+main > #tab:has(.active) > .column-all > .menu > a:focus {
+    color: #5f5f5f;
+    cursor: pointer;
+    background: #fefefe;
+}
+main > #tab > .column-all > .menu > a > svg {
+    transition: stroke 0.25s ease-in-out;
+}
+main > #tab:has(.active) > .column-all > .menu > a:focus > svg {
+    stroke: #5f5f5f;
+}
+main > #tab > .column-all.menu-list {
+    gap: 0;
+    width: 100%;
+    padding: 8px;
+    display: none;
+    background: #f5f5f5;
+    border-radius: 12px;
+    flex-direction: column;
+    border: 1px solid #cfcfcf;
+}
+main > #tab > .column-all.menu-list.active {
+    display: flex;
+}
+main > #tab > .column-all.menu-list > a {
+    padding: 12px;
+    color: #afafaf;
+    border-radius: 8px;
+    transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+}
+main > #tab > .column-all.menu-list > a:hover {
+    color: #5f5f5f;
+    background: #fefefe;
+}
+main > #tab:has(.scrolled) > .menu-list {
+    box-shadow: 0 8px 24px #1f1f1f22;
+}
+main > #about > .column-left {
+    flex-basis: 60%;
+}
+main > #about > .column-right {
+    flex-basis: 100%;
+}
+main > #about > .column-left > div > span > span {
+    margin: 0 4px;
+}
+main > #about > div > div > h3 {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+}
+main > #principle > div > p > svg {
+    vertical-align: middle;
+    margin-right: 2px;
+}
+main > #work > .column-all > .list {
+    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+main > #work > .column-all > .list > .card {
+    gap: 4px;
+    display: flex;
+    padding: 12px;
+    background: #fafafa;
+    border-radius: 12px;
+    flex-direction: column;
+    border: 1px solid #cfcfcf;
+}
+main > #work > .column-all > .list > .card > img {
+    object-fit: cover;
+    aspect-ratio: 1.4;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #cfcfcf;
+}
+main > #achievement > .column-all > .list > .card > img {
+    object-position: top;
+}
+main > #work > .column-all > .list > .card > span,
+main > #work > .column-all > .list > .card > span > a {
+    font-size: 12px;
+}
+main > #work > .column-all > .list > .card > p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+main > #achievement > .column-all > .list {
+    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+main > #achievement > .column-all > .list > .card {
+    gap: 4px;
+    display: flex;
+    padding: 12px;
+    background: #fafafa;
+    border-radius: 12px;
+    flex-direction: column;
+    border: 1px solid #cfcfcf;
+}
+main > #achievement > .column-all > .list > .card > img {
+    object-fit: cover;
+    aspect-ratio: 1.4;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #cfcfcf;
+}
+main > #achievement > .column-all > .list > .card > span,
+main > #achievement > .column-all > .list > .card > span > a {
+    font-size: 12px;
+}
+main > #achievement > .column-all > .list > .card > p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+@media (max-width: 640px) {
+    main > #work > .column-all > .list,
+    main > #achievement > .column-all > .list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
