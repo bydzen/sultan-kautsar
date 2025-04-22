@@ -15,7 +15,7 @@ header > .card {
     box-shadow: 0 8px 24px #1f1f1f22;
 }
 header > .card > .card-image > img {
-    max-width: 189px;
+    max-width: 148px;
     aspect-ratio: 1 / 1;
     border-radius: 12px;
     border: 1px solid #cfcfcf;
@@ -67,7 +67,6 @@ header > .card > .card-detail > .card-link > a > svg {
 header > .card > .card-detail > .card-link > a:hover > svg {
     fill: #5f5f5f;
 }
-
 main {
     gap: 48px;
     display: flex;
@@ -94,139 +93,15 @@ main > section > div > div {
     display: flex;
     flex-direction: column;
 }
-
-main > section#tab {
-    top: 12px;
-    position: sticky;
-    justify-content: center;
-}
-main > section#tab > .column-all > div {
-    gap: 4px;
-    padding: 4px;
-    background: #f5f5f5;
-    flex-direction: row;
-    border-radius: 999px;
-    border: 1px solid #cfcfcf;
-    transition: box-shadow 0.25s ease-in-out;
-}
-main > section#tab > .column-all > div.scrolled {
-    box-shadow: 0 8px 24px #1f1f1f22;
-}
-main > section#tab > .column-all > div > a {
+main > #breadcrumbs > p {
+    gap: 8px;
     display: flex;
+    flex-wrap: wrap;
+}
+main > #breadcrumbs > p > a,
+main > #breadcrumbs > p > span {
     color: #afafaf;
-    padding: 4px 20px;
-    align-items: center;
-    border-radius: 999px;
-    text-decoration: none;
-    justify-content: center;
-    transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
 }
-main > section#tab > .column-all > div > a:hover {
-    color: #5f5f5f;
-    cursor: pointer;
-    background: #fefefe;
-}
-main > section#tab > .column-all > div > a:focus {
-    color: #5f5f5f;
-    background: #fefefe;
-}
-main > section#tab > .column-all > div > a > svg {
-    transition: stroke 0.25s ease-in-out;
-}
-main > section#tab > .column-all > div > a:focus > svg {
-    stroke: #5f5f5f;
-}
-
-main > section#about > .column-left {
-    flex-basis: 60%;
-}
-main > section#about > .column-right {
-    flex-basis: 100%;
-}
-main > section#about > .column-left > div > span > span {
-    margin: 0 4px;
-}
-main > section#about > div > div > h3 {
-    gap: 6px;
-    display: flex;
-    align-items: center;
-}
-
-main > section#principle > div > p > svg {
-    vertical-align: middle;
-    margin-right: 2px;
-}
-
-main > section#work > .column-all > .list {
-    gap: 8px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-main > section#work > .column-all > .list > .card {
-    gap: 4px;
-    display: flex;
-    padding: 12px;
-    background: #fafafa;
-    border-radius: 12px;
-    flex-direction: column;
-    border: 1px solid #cfcfcf;
-}
-main > section#work > .column-all > .list > .card > img {
-    object-fit: cover;
-    aspect-ratio: 1.4;
-    border-radius: 6px;
-    margin-bottom: 8px;
-    border: 1px solid #cfcfcf;
-}
-main > section#achievement > .column-all > .list > .card > img {
-    object-position: top;
-}
-main > section#work > .column-all > .list > .card > span,
-main > section#work > .column-all > .list > .card > span > a {
-    font-size: 12px;
-}
-main > section#work > .column-all > .list > .card > p {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-}
-
-main > section#achievement > .column-all > .list {
-    gap: 8px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-main > section#achievement > .column-all > .list > .card {
-    gap: 4px;
-    display: flex;
-    padding: 12px;
-    background: #fafafa;
-    border-radius: 12px;
-    flex-direction: column;
-    border: 1px solid #cfcfcf;
-}
-main > section#achievement > .column-all > .list > .card > img {
-    object-fit: cover;
-    aspect-ratio: 1.4;
-    border-radius: 6px;
-    margin-bottom: 8px;
-    border: 1px solid #cfcfcf;
-}
-main > section#achievement > .column-all > .list > .card > span,
-main > section#achievement > .column-all > .list > .card > span > a {
-    font-size: 12px;
-}
-main > section#achievement > .column-all > .list > .card > p {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-}
-
 footer {
     padding: 40px 24px 80px 24px;
 }
@@ -243,7 +118,6 @@ footer > span > a {
     color: #afafaf;
     text-decoration: none;
 }
-
 @media (max-width: 640px) {
     header {
         padding-top: 24px;
@@ -266,13 +140,6 @@ footer > span > a {
     main > section {
         gap: 64px;
         flex-direction: column;
-    }
-    main > section#tab {
-        flex-direction: row;
-    }
-    main > section#work > .column-all > .list,
-    main > section#achievement > .column-all > .list {
-        grid-template-columns: repeat(1, 1fr);
     }
     footer {
         padding-bottom: 24px;
