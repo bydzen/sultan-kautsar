@@ -1,24 +1,35 @@
+/*
+-------------------------
+Update Greeting
+-------------------------
+*/
 function updateGreeting() {
     const hours = new Date().getHours();
     let greeting;
     let emoji;
     if (hours >= 5 && hours < 12) {
         greeting = "good morning!";
-        emoji = "🌄";
+        emoji = "🌅";
     } else if (hours >= 12 && hours < 18) {
         greeting = "good afternoon!";
-        emoji = "⛅";
+        emoji = "🌤️";
     } else {
         greeting = "good evening!";
         emoji = "🌆";
     }
-    document.getElementById("js-greeting").textContent = greeting;
-    document.getElementById("js-emoji").textContent = emoji;
+    if (document.getElementById("js-greeting") && document.getElementById("js-emoji")) {
+        document.getElementById("js-greeting").textContent = greeting;
+        document.getElementById("js-emoji").textContent = emoji;
+    }
 }
 updateGreeting();
-
+/*
+-------------------------
+Sticky Tab Scroll
+-------------------------
+*/
 document.addEventListener("scroll", function () {
-    let target = document.querySelector("main > #tab > .column-all");
+    let target = document.querySelector("main #tab nav");
     if (target) {
         let rect = target.getBoundingClientRect();
         if (rect.top <= 12) {
@@ -28,9 +39,13 @@ document.addEventListener("scroll", function () {
         }
     }
 });
-
+/*
+-------------------------
+Anchor Scroll Behaviour
+-------------------------
+*/
 document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll("main > #tab > .column-all > div a");
+    const links = document.querySelectorAll("main #tab a");
     const offset = 80;
     links.forEach((link) => {
         link.addEventListener("click", (e) => {
@@ -50,8 +65,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-
-function toggleMenu() {
-    const containerMenu = document.querySelector(".menu-list");
-    containerMenu.classList.toggle("active");
-}
