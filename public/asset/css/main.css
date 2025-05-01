@@ -1,7 +1,68 @@
+/* 
+-------------------------
+Reset
+-------------------------
+*/
+@font-face {
+    font-display: swap;
+    font-family: "Inter";
+    src: url(/asset/font/inter.ttf);
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+body {
+    color: #1f1f1f;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.64px;
+    background-color: #fefefe;
+    font-family: "Inter", sans-serif;
+}
+a {
+    color: #5f5f5f;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+h1 {
+    font-size: 24px;
+    line-height: 1.15;
+}
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+h3 {
+    color: #5f5f5f;
+    font-size: 14px;
+    font-weight: 500;
+}
+img {
+    max-width: 100%;
+}
+p,
+span {
+    color: #5f5f5f;
+    font-size: 14px;
+}
+/* 
+-------------------------
+Header
+-------------------------
+*/
 header {
     padding: 80px 24px 40px 24px;
 }
-header > .card {
+header .profile {
     gap: 24px;
     display: flex;
     padding: 24px;
@@ -14,94 +75,245 @@ header > .card {
     background-color: #f5f5f5;
     box-shadow: 0 8px 24px #1f1f1f22;
 }
-header > .card > .card-image > img {
-    max-width: 148px;
+header .profile-image img {
+    max-width: 189px;
     aspect-ratio: 1 / 1;
     border-radius: 12px;
     border: 1px solid #cfcfcf;
 }
-header > .card > .card-detail {
-    gap: 8px;
-    display: flex;
-    flex-direction: column;
-}
-header > .card > .card-detail > .card-greeting {
+header .profile-greeting {
     gap: 12px;
     display: flex;
     font-weight: 300;
     margin-bottom: 4px;
 }
-header > .card > .card-detail > .card-greeting > span {
+header .profile-greeting span {
     color: #afafaf;
-    font-size: 13px;
     font-weight: 300;
 }
-header > .card > .card-detail > .card-greeting > span > span {
-    color: #afafaf;
+header .profile-detail {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
 }
-header > .card > .card-detail > .card-greeting > span > span#js-emoji {
-    font-size: 12px;
-    margin-right: 2px;
-}
-header > .card > .card-detail > .card-greeting > span > span#js-greeting {
-    font-size: 12px;
-}
-header > .card > .card-detail > p {
+header .profile-detail p {
     color: #5f5f5f;
     font-size: 16px;
     font-weight: 300;
 }
-header > .card > .card-detail > p > a {
+header .profile-detail a {
     font-size: 16px;
 }
-header > .card > .card-detail > .card-link {
+header .profile-link {
     gap: 12px;
     row-gap: 4px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 4px;
 }
-header > .card > .card-detail > .card-link > a > svg {
+header .profile-link svg {
     transition: fill 0.25s ease-in-out;
 }
-header > .card > .card-detail > .card-link > a:hover > svg {
+header .profile-link svg:hover {
     fill: #5f5f5f;
 }
+/* 
+-------------------------
+Main
+-------------------------
+*/
 main {
     gap: 48px;
     display: flex;
     padding: 40px 24px;
     flex-direction: column;
 }
-main > section {
-    gap: 48px;
+main section {
     width: 100%;
     display: flex;
     margin: 0 auto;
     max-width: 840px;
 }
-main > section > div {
+main div {
     gap: 16px;
     display: flex;
     flex-direction: column;
 }
-main > section > div > h2 {
+main div h2 {
     margin-bottom: 8px;
 }
-main > section > div > div {
+main div div {
     gap: 4px;
     display: flex;
     flex-direction: column;
 }
-main > #breadcrumbs > p {
-    gap: 8px;
+/* 
+-------------------------
+Main - Tab Section
+-------------------------
+*/
+main #tab {
+    top: 12px;
+    position: sticky;
+    justify-content: center;
+}
+main #tab nav {
+    gap: 4px;
+    padding: 4px;
     display: flex;
-    flex-wrap: wrap;
+    background: #f5f5f5;
+    flex-direction: row;
+    border-radius: 999px;
+    border: 1px solid #cfcfcf;
+    transition: box-shadow 0.25s ease-in-out;
 }
-main > #breadcrumbs > p > a,
-main > #breadcrumbs > p > span {
+main #tab nav.scrolled {
+    box-shadow: 0 8px 24px #1f1f1f22;
+}
+main #tab a {
+    display: flex;
     color: #afafaf;
+    padding: 4px 16px;
+    align-items: center;
+    border-radius: 999px;
+    text-decoration: none;
+    justify-content: center;
+    transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
 }
+main #tab a:hover {
+    color: #5f5f5f;
+    cursor: pointer;
+    background: #fefefe;
+}
+main #tab a:focus {
+    color: #5f5f5f;
+    background: #fefefe;
+}
+main #tab a svg {
+    transition: stroke 0.25s ease-in-out;
+}
+main #tab a:focus svg {
+    stroke: #5f5f5f;
+}
+/* 
+-------------------------
+Main - About Section
+-------------------------
+*/
+main #about {
+    gap: 48px;
+}
+main #about .left {
+    flex-basis: 60%;
+}
+main #about .right {
+    flex-basis: 100%;
+}
+main #about .left span span {
+    margin: 0 4px;
+}
+main #about h3 {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+}
+/* 
+-------------------------
+Main - Principle
+-------------------------
+*/
+main #principle svg {
+    vertical-align: middle;
+    margin-right: 2px;
+}
+/* 
+-------------------------
+Main - Work
+-------------------------
+*/
+main #work .list {
+    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+main #work .card {
+    gap: 4px;
+    display: flex;
+    padding: 12px;
+    background: #fafafa;
+    border-radius: 12px;
+    flex-direction: column;
+    border: 1px solid #cfcfcf;
+}
+main #work .card img {
+    object-fit: cover;
+    aspect-ratio: 1.4;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #cfcfcf;
+}
+main #work .card span {
+    font-size: 12px;
+}
+main #work .card p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+/* 
+-------------------------
+Main - Achievement
+-------------------------
+*/
+main #achievement .list {
+    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+main #achievement .card {
+    gap: 4px;
+    display: flex;
+    padding: 12px;
+    background: #fafafa;
+    border-radius: 12px;
+    flex-direction: column;
+    border: 1px solid #cfcfcf;
+}
+main #achievement .card img {
+    object-fit: cover;
+    aspect-ratio: 1.4;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    object-position: top;
+    border: 1px solid #cfcfcf;
+}
+main #achievement .card span {
+    font-size: 12px;
+}
+main #achievement .card p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+/* 
+-------------------------
+Main - Contact Section
+-------------------------
+*/
+main #contact p {
+    gap: 6px;
+    display: flex;
+    justify-content: center;
+}
+/* 
+-------------------------
+Footer
+-------------------------
+*/
 footer {
     padding: 40px 24px 80px 24px;
 }
@@ -118,7 +330,17 @@ footer > span > a {
     color: #afafaf;
     text-decoration: none;
 }
+/* 
+-------------------------
+Media - 0px to 640px
+-------------------------
+*/
 @media (max-width: 640px) {
+    /* 
+    -------------------------
+    Media - Header
+    -------------------------
+    */
     header {
         padding-top: 24px;
     }
@@ -133,6 +355,11 @@ footer > span > a {
         object-fit: cover;
         aspect-ratio: auto;
     }
+    /* 
+    -------------------------
+    Media - Main
+    -------------------------
+    */
     main {
         gap: 64px;
         padding: 32px 24px;
@@ -141,6 +368,18 @@ footer > span > a {
         gap: 64px;
         flex-direction: column;
     }
+    main > section#tab {
+        flex-direction: row;
+    }
+    main > section#work > .column-all > .list,
+    main > section#achievement > .column-all > .list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* 
+    -------------------------
+    Media - Footer
+    -------------------------
+    */
     footer {
         padding-bottom: 24px;
     }
