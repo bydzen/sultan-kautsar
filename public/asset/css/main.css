@@ -1,8 +1,4 @@
-/* 
--------------------------
-Reset
--------------------------
-*/
+/* Documentation: Reset */
 @font-face {
     font-display: swap;
     font-family: "Inter";
@@ -54,11 +50,7 @@ span {
     color: #5f5f5f;
     font-size: 14px;
 }
-/* 
--------------------------
-Header
--------------------------
-*/
+/* Documentation: Header */
 header {
     padding: 80px 24px 40px 24px;
 }
@@ -117,11 +109,7 @@ header .profile-link svg {
 header .profile-link svg:hover {
     fill: #5f5f5f;
 }
-/* 
--------------------------
-Main
--------------------------
-*/
+/* Documentation: Main */
 main {
     gap: 48px;
     display: flex;
@@ -147,11 +135,7 @@ main div div {
     display: flex;
     flex-direction: column;
 }
-/* 
--------------------------
-Main - Tab Section
--------------------------
-*/
+/* Documentation: Tab */
 main #tab {
     top: 12px;
     position: sticky;
@@ -195,11 +179,7 @@ main #tab a svg {
 main #tab a:focus svg {
     stroke: #5f5f5f;
 }
-/* 
--------------------------
-Main - About Section
--------------------------
-*/
+/* Documentation: About */
 main #about {
     gap: 48px;
 }
@@ -217,20 +197,12 @@ main #about h3 {
     display: flex;
     align-items: center;
 }
-/* 
--------------------------
-Main - Principle
--------------------------
-*/
+/* Documentation: Principle */
 main #principle svg {
     vertical-align: middle;
     margin-right: 2px;
 }
-/* 
--------------------------
-Main - Work
--------------------------
-*/
+/* Documentation: Work */
 main #work .list {
     gap: 8px;
     display: grid;
@@ -262,11 +234,7 @@ main #work .card p {
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
 }
-/* 
--------------------------
-Main - Achievement
--------------------------
-*/
+/* Documentation: Achievement */
 main #achievement .list {
     gap: 8px;
     display: grid;
@@ -299,21 +267,13 @@ main #achievement .card p {
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
 }
-/* 
--------------------------
-Main - Contact Section
--------------------------
-*/
+/* Documentation: Contact */
 main #contact p {
     gap: 6px;
     display: flex;
     justify-content: center;
 }
-/* 
--------------------------
-Footer
--------------------------
-*/
+/* Documentation: Footer */
 footer {
     padding: 40px 24px 80px 24px;
 }
@@ -330,17 +290,9 @@ footer > span > a {
     color: #afafaf;
     text-decoration: none;
 }
-/* 
--------------------------
-Media - 0px to 640px
--------------------------
-*/
+/* Documentation: Media */
 @media (max-width: 640px) {
-    /* 
-    -------------------------
-    Media - Header
-    -------------------------
-    */
+    /* Documentation: Header */
     header {
         padding-top: 24px;
     }
@@ -355,11 +307,7 @@ Media - 0px to 640px
         object-fit: cover;
         aspect-ratio: auto;
     }
-    /* 
-    -------------------------
-    Media - Main
-    -------------------------
-    */
+    /* Documentation: Main */
     main {
         gap: 64px;
         padding: 32px 24px;
@@ -375,11 +323,7 @@ Media - 0px to 640px
     main > section#achievement > .column-all > .list {
         grid-template-columns: repeat(1, 1fr);
     }
-    /* 
-    -------------------------
-    Media - Footer
-    -------------------------
-    */
+    /* Documentation: Footer */
     footer {
         padding-bottom: 24px;
     }
