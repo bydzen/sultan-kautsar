@@ -1,8 +1,4 @@
-/*
--------------------------
-Update Greeting
--------------------------
-*/
+/* Documentation: Greeting */
 function updateGreeting() {
     const hours = new Date().getHours();
     let greeting;
@@ -23,11 +19,7 @@ function updateGreeting() {
     }
 }
 updateGreeting();
-/*
--------------------------
-Sticky Tab Scroll
--------------------------
-*/
+/* Documentation: Sticky Tab */
 document.addEventListener("scroll", function () {
     let target = document.querySelector("main #tab nav");
     if (target) {
@@ -39,11 +31,7 @@ document.addEventListener("scroll", function () {
         }
     }
 });
-/*
--------------------------
-Anchor Scroll Behaviour
--------------------------
-*/
+/* Documentation: Anchor Scroll */
 document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll("main #tab a");
     const offset = 80;
