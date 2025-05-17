@@ -378,16 +378,3 @@ body.scheme-dark {
     --background-card-color: #2f2f2f;
     --background-shadow-color: #7f7f7f22;
 }
-body,
-a,
-div,
-h2,
-h3,
-img,
-nav,
-p,
-section,
-span,
-svg {
-    transition: color 0.25s ease-in-out, background 0.25s ease-in-out, border 0.25s ease-in-out, box-shadow 0.25s ease-in-out !important;
-}
