@@ -4,6 +4,7 @@
     font-family: "Inter";
     src: url(/asset/font/inter.ttf);
 }
+
 /* Documentation: Root */
 :root {
     --text-low-color: #afafaf;
@@ -14,6 +15,11 @@
     --background-body-color: #fefefe;
     --background-card-color: #fafafa;
     --background-shadow-color: #1f1f1f22;
+
+    --font-family: "Inter", sans-serif;
+    --font-heading-1: 700 20px/1.15 var(--font-family);
+    --font-heading-2: 500 16px/1.15 var(--font-family);
+    --font-heading-3: 500 14px/1.15 var(--font-family);
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -27,6 +33,7 @@
         --background-shadow-color: #7f7f7f22;
     }
 }
+
 /* Documentation: Reset */
 *,
 *::after,
@@ -44,7 +51,7 @@ body {
     line-height: 1.5;
     letter-spacing: -0.64px;
     color: var(--text-body-color);
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-family);
     background-color: var(--background-body-color);
 }
 a {
@@ -54,16 +61,13 @@ a {
     color: var(--text-fade-color);
 }
 h1 {
-    font-size: 24px;
-    line-height: 1.15;
+    font: var(--font-heading-1);
 }
 h2 {
-    font-size: 18px;
-    font-weight: 500;
+    font: var(--font-heading-2);
 }
 h3 {
-    font-size: 14px;
-    font-weight: 500;
+    font: var(--font-heading-3);
     color: var(--text-fade-color);
 }
 img {
@@ -74,60 +78,56 @@ span {
     font-size: 14px;
     color: var(--text-fade-color);
 }
+
 /* Documentation: Header */
 header {
     padding: 80px 24px 40px 24px;
 }
 header .profile {
-    gap: 24px;
+    gap: 20px;
     display: flex;
-    padding: 24px;
+    padding: 20px;
     margin: 0 auto;
     overflow: hidden;
     max-width: 840px;
     align-items: center;
-    border-radius: 24px;
+    border-radius: 16px;
     transform-origin: center;
-    transition: transform 0.125s linear;
     border: 1px solid var(--border-body-color);
     background-color: var(--background-tab-color);
-    box-shadow: 0 8px 24px var(--background-shadow-color);
+    box-shadow: 0 8px 20px var(--background-shadow-color);
 }
 header .profile-image img {
-    max-width: 189px;
+    max-width: 132px;
     aspect-ratio: 1 / 1;
-    border-radius: 12px;
+    border-radius: 8px;
     border: 1px solid var(--border-body-color);
 }
 header .profile-greeting {
     gap: 12px;
     display: flex;
     font-weight: 300;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 header .profile-greeting span {
     font-weight: 300;
     color: var(--text-low-color);
 }
 header .profile-detail {
-    gap: 8px;
+    gap: 4px;
     display: flex;
     flex-direction: column;
 }
 header .profile-detail p {
-    font-size: 16px;
     font-weight: 300;
     color: var(--text-fade-color);
-}
-header .profile-detail a {
-    font-size: 16px;
 }
 header .profile-link {
     gap: 12px;
     row-gap: 4px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 4px;
+    margin-top: 8px;
 }
 header .profile-link svg {
     transition: fill 0.25s ease-in-out;
@@ -135,6 +135,23 @@ header .profile-link svg {
 header .profile-link svg:hover {
     fill: var(--text-fade-color);
 }
+@media (max-width: 640px) {
+    header {
+        padding-top: 24px;
+    }
+    header .profile {
+        align-items: normal;
+        flex-direction: column;
+    }
+    header .profile-image img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 240px;
+        object-fit: cover;
+        aspect-ratio: auto;
+    }
+}
+
 /* Documentation: Main */
 main {
     gap: 48px;
@@ -161,6 +178,17 @@ main div div {
     display: flex;
     flex-direction: column;
 }
+@media (max-width: 640px) {
+    main {
+        gap: 64px;
+        padding: 32px 24px;
+    }
+    main section {
+        gap: 64px;
+        flex-direction: column;
+    }
+}
+
 /* Documentation: Tab */
 main #tab {
     top: 12px;
@@ -168,7 +196,6 @@ main #tab {
     justify-content: center;
 }
 main #tab nav {
-    gap: 4px;
     padding: 4px;
     display: flex;
     flex-direction: row;
@@ -210,6 +237,12 @@ main #tab a:focus svg {
 main #tab .scheme-toggle svg {
     display: none;
 }
+@media (max-width: 640px) {
+    main #tab {
+        flex-direction: row;
+    }
+}
+
 /* Documentation: About */
 main #about {
     gap: 48px;
@@ -228,11 +261,13 @@ main #about h3 {
     display: flex;
     align-items: center;
 }
+
 /* Documentation: Principle */
 main #principle svg {
     vertical-align: middle;
     margin-right: 2px;
 }
+
 /* Documentation: Work */
 main #work .list {
     gap: 8px;
@@ -265,6 +300,12 @@ main #work .card p {
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
 }
+@media (max-width: 640px) {
+    main #work .list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 /* Documentation: Achievement */
 main #achievement .list {
     gap: 8px;
@@ -298,12 +339,19 @@ main #achievement .card p {
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
 }
+@media (max-width: 640px) {
+    main #achievement .list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 /* Documentation: Contact */
 main #contact p {
     gap: 6px;
     display: flex;
     align-items: center;
 }
+
 /* Documentation: Footer */
 footer {
     padding: 40px 24px 80px 24px;
@@ -319,44 +367,12 @@ footer a {
     text-decoration: none;
     color: var(--text-low-color);
 }
-/* Documentation: Media */
 @media (max-width: 640px) {
-    /* Documentation: Header */
-    header {
-        padding-top: 24px;
-    }
-    header .profile {
-        align-items: normal;
-        flex-direction: column;
-    }
-    header .profile-image img {
-        width: 100%;
-        max-width: 100%;
-        max-height: 240px;
-        object-fit: cover;
-        aspect-ratio: auto;
-    }
-    /* Documentation: Main */
-    main {
-        gap: 64px;
-        padding: 32px 24px;
-    }
-    main section {
-        gap: 64px;
-        flex-direction: column;
-    }
-    main #tab {
-        flex-direction: row;
-    }
-    main #work .list,
-    main #achievement .list {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    /* Documentation: Footer */
     footer {
         padding-bottom: 24px;
     }
 }
+
 /* Documentation: Scheme Handler */
 body.scheme-light {
     --text-low-color: #afafaf;
