@@ -1,100 +1,81 @@
 /* Documentation: Greeting */
+function getGreetingByHour(hour) {
+    if (hour >= 5 && hour < 12) return { greeting: "good morning!", emoji: "🌅" };
+    if (hour >= 12 && hour < 18) return { greeting: "good afternoon!", emoji: "🌤️" };
+    return { greeting: "good evening!", emoji: "🌆" };
+}
 function updateGreeting() {
-    const hours = new Date().getHours();
-    let greeting;
-    let emoji;
-    if (hours >= 5 && hours < 12) {
-        greeting = "good morning!";
-        emoji = "🌅";
-    } else if (hours >= 12 && hours < 18) {
-        greeting = "good afternoon!";
-        emoji = "🌤️";
-    } else {
-        greeting = "good evening!";
-        emoji = "🌆";
-    }
-    if (document.getElementById("js-greeting") && document.getElementById("js-emoji")) {
-        document.getElementById("js-greeting").textContent = greeting;
-        document.getElementById("js-emoji").textContent = emoji;
-    }
+    const { greeting, emoji } = getGreetingByHour(new Date().getHours());
+    const greetingEl = document.getElementById("js-greeting");
+    const emojiEl = document.getElementById("js-emoji");
+    if (greetingEl) greetingEl.textContent = greeting;
+    if (emojiEl) emojiEl.textContent = emoji;
 }
 updateGreeting();
+
 /* Documentation: Sticky Tab */
-document.addEventListener("scroll", function () {
-    let target = document.querySelector("main #tab nav");
-    if (target) {
-        let rect = target.getBoundingClientRect();
-        if (rect.top <= 12) {
-            target.classList.add("scrolled");
-        } else {
-            target.classList.remove("scrolled");
-        }
-    }
-});
+function handleScroll() {
+    const target = document.querySelector("main #tab nav");
+    if (!target) return;
+    const isScrolled = target.getBoundingClientRect().top <= 12;
+    target.classList.toggle("scrolled", isScrolled);
+}
+document.addEventListener("scroll", handleScroll);
+
 /* Documentation: Anchor Scroll */
 document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll("main #tab a");
     const offset = 80;
+    const scrollToTarget = (targetId) => {
+        if (targetId === "about") {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            return;
+        }
+        const target = document.getElementById(targetId);
+        if (target) {
+            const top = target.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top, behavior: "smooth" });
+        }
+    };
     links.forEach((link) => {
         link.addEventListener("click", (e) => {
             e.preventDefault();
             const targetId = link.getAttribute("href").substring(1);
-            if (targetId === "about") {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-            } else {
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    window.scrollTo({
-                        top: targetSection.getBoundingClientRect().top + window.scrollY - offset,
-                        behavior: "smooth",
-                    });
-                }
-            }
+            scrollToTarget(targetId);
         });
     });
 });
-/* Documentation: Profile Card Scroll Effect */
-window.addEventListener("scroll", function () {
-    const profile = document.querySelector(".profile");
-    const scrollY = window.scrollY;
-    const startOffset = 140;
-    const maxScrollEffect = 480;
-    const effectiveScroll = Math.min(Math.max(scrollY - startOffset, 0), maxScrollEffect);
-    const scrollPercent = effectiveScroll / maxScrollEffect;
-    const scale = 1 + scrollPercent * -0.25;
-    profile.style.transform = `scale(${scale})`;
-});
+
 /* Documentation: Scheme Handler */
 function applyScheme(scheme) {
     document.body.classList.remove("scheme-light", "scheme-dark");
     document.body.classList.add(`scheme-${scheme}`);
-    if (document.querySelector(".scheme-toggle")) {
-        const iconLight = document.querySelector(".scheme-toggle .icon-light");
-        const iconDark = document.querySelector(".scheme-toggle .icon-dark");
-        if (scheme === "light") {
-            iconLight.style.display = "inline";
-            iconDark.style.display = "none";
-        } else {
-            iconLight.style.display = "none";
-            iconDark.style.display = "inline";
-        }
-    }
+    const toggle = document.querySelector(".scheme-toggle");
+    if (!toggle) return;
+    const iconLight = toggle.querySelector(".icon-light");
+    const iconDark = toggle.querySelector(".icon-dark");
+    const isLight = scheme === "light";
+    if (iconLight) iconLight.style.display = isLight ? "inline" : "none";
+    if (iconDark) iconDark.style.display = isLight ? "none" : "inline";
 }
 function initScheme() {
-    let savedScheme = localStorage.getItem("color-scheme");
-    if (!savedScheme) {
+    let scheme = localStorage.getItem("color-scheme");
+    if (!scheme) {
         const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        savedScheme = prefersDark ? "dark" : "light";
-        localStorage.setItem("color-scheme", savedScheme);
+        scheme = prefersDark ? "dark" : "light";
+        localStorage.setItem("color-scheme", scheme);
     }
-    applyScheme(savedScheme);
+    applyScheme(scheme);
 }
-if (document.querySelector(".scheme-toggle")) {
-    document.querySelector(".scheme-toggle").addEventListener("click", () => {
-        const currentScheme = document.body.classList.contains("scheme-dark") ? "dark" : "light";
-        const newScheme = currentScheme === "dark" ? "light" : "dark";
-        localStorage.setItem("color-scheme", newScheme);
-        applyScheme(newScheme);
+function setupToggle() {
+    const toggle = document.querySelector(".scheme-toggle");
+    if (!toggle) return;
+    toggle.addEventListener("click", () => {
+        const current = document.body.classList.contains("scheme-dark") ? "dark" : "light";
+        const next = current === "dark" ? "light" : "dark";
+        localStorage.setItem("color-scheme", next);
+        applyScheme(next);
     });
 }
 initScheme();
+setupToggle();
