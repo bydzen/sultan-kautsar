@@ -228,23 +228,23 @@ const gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
+      src: "/images/gallery/achievement-bangkit.jpg",
+      alt: "Bangkit Academy Achievement",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
+      src: "/images/gallery/achievement-digital-marketing.jpg",
+      alt: "Digital Marketing Certification",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
+      src: "/images/gallery/achievement-it-support.jpg",
+      alt: "IT Support Certification",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
+      src: "/images/gallery/sultan-kautsar.jpg",
+      alt: "Sultan Kautsar",
       orientation: "horizontal",
     },
   ],
