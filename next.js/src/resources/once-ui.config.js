@@ -187,4 +187,10 @@ const sameAs = {
   discord: "https://discord.gg/cRu5qyvQ",
 };
 
-export { display, mailchimp, routes, protectedRoutes, baseURL, fonts, style, schema, sameAs, effects, dataStyle };
+// Google Analytics configuration
+const analytics = {
+  enabled: process.env.NEXT_PUBLIC_GA_ID ? true : false,
+  ga_id: process.env.NEXT_PUBLIC_GA_ID || "",
+};
+
+export { display, mailchimp, routes, protectedRoutes, baseURL, fonts, style, schema, sameAs, effects, dataStyle, analytics };
