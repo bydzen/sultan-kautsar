@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /decrypt-me-virgiyan.html
+
+Sitemap: https://sultankautsar.com/sitemap.xml
