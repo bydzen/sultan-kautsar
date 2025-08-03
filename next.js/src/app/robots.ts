@@ -5,8 +5,7 @@ export default function robots() {
     rules: [
       {
         userAgent: "*",
-        allow: "/",
-        disallow: "/*",
+        disallow: "/",
       },
     ],
     sitemap: `${baseURL}/sitemap.xml`,
