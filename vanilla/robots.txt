@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /decrypt.html
 
 Sitemap: https://sultankautsar.com/sitemap.xml
