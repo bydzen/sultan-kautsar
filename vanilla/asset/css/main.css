@@ -6,9 +6,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-*,
-*::after,
-*::before {
+a,
+body,
+div,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+li,
+main,
+p,
+section,
+ul {
     border: 0;
     outline: 0;
     font: inherit;
@@ -81,9 +96,11 @@ select:focus-visible {
 }
 span {
     display: inline-block;
+    color: var(--color-secondary);
 }
 strong {
     font-weight: 500;
+    color: var(--color-text);
 }
 textarea {
     outline-offset: 2px;
@@ -143,12 +160,16 @@ header div a {
     color: var(--color-primary);
 }
 header div a img {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     margin-top: -1px;
     margin-left: 4px;
     display: inline-block;
     vertical-align: middle;
+    transition: transform 0.175s ease-in-out;
+}
+header div a:hover img {
+    transform: translateX(2px);
 }
 main {
     padding: 24px 0;
@@ -170,9 +191,34 @@ footer {
     margin-inline: auto;
     padding: 24px 0 64px 0;
 }
+footer div {
+    gap: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 footer p {
     color: #afafaf;
     font-size: 12px;
+}
+footer span {
+    display: flex;
+    align-items: center;
+}
+footer span img {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    opacity: 0.75;
+    outline-offset: 2px;
+    outline: 2px solid transparent;
+    transition: outline-color 0.175s ease-in-out;
+}
+footer span img:focus-visible {
+    outline-color: var(--color-primary);
+}
+footer span img:hover {
+    cursor: pointer;
 }
 
 /* Documentation: Media CSS */
@@ -189,4 +235,20 @@ footer p {
         --color-secondary: #bfbfbf;
         --color-background: #0f0f0f;
     }
+}
+
+/* Documentation: Data CSS */
+html[data-theme="dark"] {
+    --color-text: #fefefe;
+    --color-border: #1f1f1f;
+    --color-primary: #1d9bf0;
+    --color-secondary: #bfbfbf;
+    --color-background: #0f0f0f;
+}
+html[data-theme="light"] {
+    --color-text: #1f1f1f;
+    --color-border: #e2e2e2;
+    --color-primary: #1d9bf0;
+    --color-secondary: #4f4f4f;
+    --color-background: #fefefe;
 }
