@@ -71,6 +71,9 @@ button {
 button:focus-visible {
     outline-color: var(--color-primary);
 }
+figcaption {
+    color: var(--color-secondary);
+}
 h1,
 h2,
 h3,
@@ -79,6 +82,9 @@ h5,
 h6 {
     font-weight: 500;
     margin-bottom: 4px;
+}
+img {
+    color: var(--color-secondary);
 }
 input {
     outline-offset: 2px;
