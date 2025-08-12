@@ -147,8 +147,11 @@ header {
 header > img {
     width: 72px;
     height: 72px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
     outline-offset: 4px;
     border-radius: 9999px;
+    object-position: center;
     outline: 2px solid var(--color-primary);
 }
 header div h1 img {
