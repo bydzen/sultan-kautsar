@@ -109,7 +109,6 @@ select:focus-visible {
     outline-color: var(--color-primary);
 }
 span {
-    display: inline-block;
     color: var(--color-secondary);
 }
 strong {
