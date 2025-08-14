@@ -235,6 +235,9 @@ footer span img:hover {
     header {
         padding-top: 24px;
     }
+    footer {
+        padding: 24px 0;
+    }
 }
 
 /* Documentation: Data CSS */
