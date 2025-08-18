@@ -21,24 +21,9 @@
     --color-secondary: #4f4f4f;
     --color-background: #fefefe;
 }
-a,
-body,
-div,
-footer,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-html,
-img,
-li,
-main,
-p,
-section,
-ul {
+*,
+*::after,
+*::before {
     border: 0;
     outline: 0;
     font: inherit;
