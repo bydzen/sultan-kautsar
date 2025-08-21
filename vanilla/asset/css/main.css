@@ -184,6 +184,9 @@ main section:not(:last-child) {
 main section a {
     color: var(--color-primary);
 }
+main section h2 {
+    margin-bottom: 8px;
+}
 main section p:not(:last-child) {
     margin-bottom: 12px;
 }
