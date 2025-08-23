@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
-Disallow: /n/
+Disallow: /asset/resource/pdf/
+Allow: /n/
+Disallow: /n/asset/img/
 Disallow: /v/
 
 Sitemap: https://sultankautsar.com/sitemap.xml
+Sitemap: https://sultankautsar.com/n/sitemap.xml
