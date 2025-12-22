@@ -1,8 +1,8 @@
 /* Documentation: Font CSS */
 @font-face {
     font-display: swap;
-    font-family: "Inter";
-    src: url(/asset/resource/font/inter-variable.ttf);
+    font-family: "Google Sans Flex";
+    src: url(/asset/resource/font/google-sans-flex-variable.ttf);
 }
 
 /* Documentation: Reset CSS */
@@ -122,10 +122,10 @@ body {
     font-weight: 400;
     line-height: 1.5;
     padding-inline: 24px;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.2px;
     color: var(--color-text);
     background: var(--color-background);
-    font-family: "Inter", sans-serif;
+    font-family: "Google Sans Flex", sans-serif;
 }
 header {
     gap: 24px;
