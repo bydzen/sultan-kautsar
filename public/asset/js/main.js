@@ -56,11 +56,57 @@ document.addEventListener("DOMContentLoaded", function () {
     banner.id = "consent-banner";
     banner.className = "consent";
     banner.innerHTML = `
+        <style>
+            :root {
+                --color-text: #1f1f1f;
+                --color-gray: #575757;
+                --color-border: #e2e2e2;
+                --color-primary: #065b93;
+                --color-secondary: #3f3f3f;
+                --color-background: #fefefe;
+            }
+            .consent {
+                left: 50%;
+                width: 90%;
+                bottom: 16px;
+                padding: 16px;
+                z-index: 1000;
+                position: fixed;
+                max-width: 380px;
+                border-radius: 8px;
+                text-align: center;
+                color: var(--color-text);
+                transform: translateX(-50%);
+                box-shadow: 0 4px 8px #00000020;
+                background: var(--color-background);
+                border: 1px solid var(--color-border);
+            }
+            .consent-button {
+                gap: 8px;
+                display: flex;
+                margin-top: 12px;
+                justify-content: center;
+            }
+            .consent-button .btn-accept {
+                border: none;
+                padding: 8px 16px;
+                border-radius: 4px;
+                color: var(--color-background);
+                background: var(--color-primary);
+            }
+            .consent-button .btn-decline {
+                border: none;
+                padding: 8px 16px;
+                border-radius: 4px;
+                color: var(--color-text);
+                background: var(--color-border);
+            }
+        </style>
         <div class="consent-content">
             <p>We use cookies to enhance your experience. Do you agree to our data usage?</p>
             <div class="consent-button">
-                <button id="accept-consent" class="btn-accept">Accept</button>
                 <button id="decline-consent" class="btn-decline">Decline</button>
+                <button id="accept-consent" class="btn-accept">Accept</button>
             </div>
         </div>
     `;
