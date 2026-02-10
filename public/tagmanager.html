@@ -37,6 +37,7 @@
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <!-- Script and Styles -->
+        <script type="text/javascript" src="/asset/js/main.js"></script>
         <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
@@ -157,7 +158,7 @@
                 <header class="flex justify-center whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 py-4 bg-background-light dark:bg-background-dark sticky top-0 z-50">
                     <div class="flex items-center justify-between max-w-[1200px] w-full">
                         <div class="flex items-center gap-2 text-primary">
-                            <h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">Sultan Kautsar</h2>
+                            <a href="#" class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">Sultan Kautsar</a>
                         </div>
                         <div class="flex flex-1 justify-end gap-3 items-center">
                             <nav class="hidden md:flex items-center gap-6 me-4">
@@ -352,12 +353,12 @@
                             <span class="text-slate-900 dark:text-slate-100 font-bold">Sultan Kautsar</span>
                         </div>
                         <div class="flex gap-8 text-sm text-slate-500">
-                            <a class="hover:text-primary" href="https://sultankautsar.com">Website</a>
+                            <a class="hover:text-primary" href="/">Website</a>
                             <a class="hover:text-primary" href="https://linkedin.com/in/sultankautsar">LinkedIn</a>
                             <a class="hover:text-primary" href="https://github.com/bydzen">GitHub</a>
                             <a class="hover:text-primary" href="http://instagram.com/bydzen">Instagram</a>
                         </div>
-                        <p class="text-sm text-slate-400">© 2026 <a class="hover:text-primary" href="https://sultankautsar.com">Sultan Kautsar</a>. All rights reserved.</p>
+                        <p class="text-sm text-slate-400">© 2026 <a class="hover:text-primary" href="/">Sultan Kautsar</a>. All rights reserved.</p>
                     </div>
                 </footer>
             </div>
@@ -371,7 +372,7 @@
             <div class="flex min-h-full items-center justify-center p-4">
                 <div class="relative bg-white dark:bg-background-dark rounded-2xl shadow-2xl w-full max-w-lg transform transition-all flex flex-col max-h-[90vh]">
                     <!-- Close Button -->
-                    <button id="closeModal" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors z-10">
+                    <button id="closeModal" class="absolute top-8 right-6 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors z-10">
                         <span class="material-symbols-outlined text-3xl">close</span>
                     </button>
                     <!-- Modal Header (Fixed) -->
