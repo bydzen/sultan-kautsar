@@ -44,9 +44,10 @@ a {
     text-underline-offset: 2px;
     outline: 2px solid transparent;
     text-decoration-color: transparent;
-    transition: outline-color 0.175s ease-in-out, text-decoration-color 0.175s ease-in-out;
+    transition: all 0.175s ease-in-out;
 }
 a:focus-visible {
+    border-radius: 2px;
     outline-color: var(--color-primary);
 }
 a:hover {
