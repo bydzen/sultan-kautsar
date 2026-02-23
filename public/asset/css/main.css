@@ -1,11 +1,9 @@
-/* Documentation: Font CSS */
 @font-face {
     font-display: swap;
     font-family: "Inter";
     src: url(/asset/resource/font/inter.ttf);
 }
 
-/* Documentation: Reset CSS */
 *,
 *::before,
 *::after {
@@ -37,7 +35,6 @@
     outline-color: transparent;
 }
 
-/* Documentation: Starter CSS */
 a {
     outline-offset: 2px;
     text-decoration: underline;
@@ -117,7 +114,6 @@ textarea:focus-visible {
     outline-color: var(--color-primary);
 }
 
-/* Documentation: Main CSS */
 body {
     font-size: 14px;
     font-weight: 400;
@@ -202,7 +198,6 @@ footer p {
     color: var(--color-gray);
 }
 
-/* Documentation: Media CSS */
 @media (max-width: 768px) {
     header {
         padding-top: 24px;
@@ -210,4 +205,36 @@ footer p {
     footer {
         padding: 24px 0;
     }
+}
+
+.consent {
+    right: 16px;
+    bottom: 16px;
+    padding: 16px;
+    z-index: 1000;
+    position: fixed;
+    max-width: 320px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #00000020;
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+}
+.consent-button {
+    gap: 8px;
+    display: flex;
+    margin-top: 12px;
+}
+.consent-button .btn-accept {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: var(--color-background);
+    background: var(--color-primary);
+}
+.consent-button .btn-decline {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: var(--color-text);
+    background: var(--color-border);
 }
