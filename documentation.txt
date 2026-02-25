@@ -1,0 +1,1 @@
+wrangler pages deploy (include: wrangler.toml | temporary: .wrangler)
