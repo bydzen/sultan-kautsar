@@ -17,16 +17,6 @@ if (currentConsent === "granted") {
         functionality_storage: "granted",
         security_storage: "granted",
     });
-} else {
-    gtag("consent", "default", {
-        ad_storage: "denied",
-        analytics_storage: "denied",
-        ad_user_data: "denied",
-        ad_personalization: "denied",
-        functionality_storage: "denied",
-        security_storage: "granted",
-        wait_for_update: 500,
-    });
 }
 (function (w, d, s, l, i) {
     w[l] = w[l] || [];
