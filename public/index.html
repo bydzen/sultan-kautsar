@@ -1,104 +1,565 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="Sultan Kautsar, Rayatiga, technology, business innovation, SME, web development, mobile development, WordPress, tech solutions, entrepreneurship" />
-        <meta name="description" content="I'm Sultan Kautsar, business owner at Rayatiga. I specialize in WordPress development, helping SMEs grow with sincere, practical tech solutions built on strong IT and web & mobile development expertise." />
-        <meta property="og:image" content="https://sultankautsar.com/asset/resource/img/sultan-kautsar-og.jpg" />
-        <title>Sultan Kautsar</title>
-        <link rel="stylesheet" href="/asset/css/main.css" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="canonical" href="https://sultankautsar.com/" />
-        <script type="text/javascript" src="/asset/js/main.js"></script>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- primary-meta -->
+        <title>Sultan Kautsar | GTM & GA4 Expert</title>
+        <meta name="title" content="Sultan Kautsar | GTM & GA4 Expert" />
+        <meta name="description" content="GTM & GA4 Specialist (8+ yrs). Expert tracking, conversion setup, & Consent Mode v2. Rate: €65/hr." />
+        <meta name="keywords" content="Google Tag Manager, GTM consultant, GA4 implementation, Google Analytics 4, tracking integration, conversion tracking, consent mode v2, GDPR compliance, server-side tracking, data analytics, digital marketing tracking, Sultan Kautsar" />
+        <meta name="author" content="Sultan Kautsar" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="7 days" />
+        <!-- canonical-url -->
+        <link rel="canonical" href="https://sultankautsar.com" />
+        <!-- open-graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://sultankautsar.com" />
+        <meta property="og:title" content="Sultan Kautsar | GTM & GA4 Expert" />
+        <meta property="og:description" content="GTM & GA4 Specialist (8+ yrs). Expert tracking, conversion setup, & Consent Mode v2. Rate: €65/hr." />
+        <meta property="og:image" content="https://sultankautsar.com/img/workflow.webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Sultan Kautsar - GTM Specialist" />
+        <meta property="og:locale" content="en_US" />
+        <!-- twitter-card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://sultankautsar.com" />
+        <meta name="twitter:title" content="Sultan Kautsar | GTM & GA4 Expert" />
+        <meta name="twitter:description" content="GTM & GA4 Specialist (8+ yrs). Expert tracking, conversion setup, & Consent Mode v2. Rate: €65/hr." />
+        <meta name="twitter:image" content="https://sultankautsar.com/img/workflow.webp" />
+        <meta name="twitter:creator" content="@bydzen" />
+        <!-- additional-meta -->
+        <meta name="theme-color" content="#1152d4" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <!-- gtm -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-MWNWFH7Z");
+        </script>
+        <!-- consent -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            // check-existing-consent-inline
+            const cookieValue = document.cookie.split("; ").find((row) => row.startsWith("user_consent="));
+            const currentConsent = cookieValue ? cookieValue.split("=")[1] : null;
+            if (currentConsent === "granted") {
+                gtag("consent", "update", {
+                    ad_storage: "granted",
+                    analytics_storage: "granted",
+                    ad_user_data: "granted",
+                    ad_personalization: "granted",
+                    functionality_storage: "granted",
+                    security_storage: "granted",
+                });
+            }
+        </script>
+        <!-- link-style -->
+        <link rel="stylesheet" href="output.css" />
+        <!-- font-icon -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <!-- json-schema -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Person",
+                        "@id": "https://sultankautsar.com/#person",
+                        "name": "Sultan Kautsar",
+                        "url": "https://sultankautsar.com",
+                        "image": "https://sultankautsar.com/img/sultan-kautsar.webp",
+                        "jobTitle": "Google Tag Manager & GA4 Specialist",
+                        "description": "GTM & GA4 Specialist with 8+ years of experience. Expert in tracking integration, conversion setup, and Consent Mode v2.",
+                        "email": "contact@sultankautsar.com",
+                        "knowsAbout": ["Google Tag Manager", "Google Analytics 4", "Conversion Tracking", "Consent Mode v2", "GDPR Compliance", "Server-side Tracking", "Digital Analytics"],
+                        "sameAs": ["https://linkedin.com/in/sultankautsar", "https://github.com/bydzen", "https://instagram.com/bydzen"],
+                        "alumniOf": {
+                            "@type": "Organization",
+                            "name": "Digital Analytics Professional"
+                        }
+                    },
+                    {
+                        "@type": "ProfessionalService",
+                        "@id": "https://sultankautsar.com/#service",
+                        "name": "Sultan Kautsar - GTM & GA4 Consultancy",
+                        "description": "Professional Google Tag Manager and Google Analytics 4 implementation services. Expert tracking, conversion setup, and privacy compliance solutions.",
+                        "url": "https://sultankautsar.com",
+                        "image": "https://sultankautsar.com/img/workflow.webp",
+                        "priceRange": "€65/hour",
+                        "telephone": "contact@sultankautsar.com",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressCountry": "Worldwide"
+                        },
+                        "areaServed": "Worldwide",
+                        "serviceType": "Digital Analytics Consulting",
+                        "provider": {
+                            "@id": "https://sultankautsar.com/#person"
+                        },
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "GTM & GA4 Services",
+                            "itemListElement": [
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Tracking Integration",
+                                        "description": "Seamlessly deploy tracking codes and pixels across your entire web ecosystem."
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Conversion Setup",
+                                        "description": "Connect your business goals to actionable data by tracking key user interactions."
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Consent Management",
+                                        "description": "Ensure privacy compliance (GDPR/CCPA) with robust Consent Mode v2 setups."
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "GA4 Configuration",
+                                        "description": "Expert Google Analytics 4 setup, event mapping, and legacy migration."
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://sultankautsar.com/#webpage",
+                        "url": "https://sultankautsar.com",
+                        "name": "Sultan Kautsar | GTM & GA4 Expert",
+                        "description": "GTM & GA4 Specialist (8+ yrs). Expert tracking, conversion setup, & Consent Mode v2. Rate: €65/hr.",
+                        "inLanguage": "en-US",
+                        "isPartOf": {
+                            "@type": "WebSite",
+                            "@id": "https://sultankautsar.com/#website",
+                            "url": "https://sultankautsar.com",
+                            "name": "Sultan Kautsar - GTM Specialist",
+                            "publisher": {
+                                "@id": "https://sultankautsar.com/#person"
+                            }
+                        },
+                        "about": {
+                            "@id": "https://sultankautsar.com/#person"
+                        },
+                        "primaryImageOfPage": {
+                            "@type": "ImageObject",
+                            "url": "https://sultankautsar.com/img/workflow.webp",
+                            "width": 1200,
+                            "height": 630
+                        }
+                    }
+                ]
+            }
+        </script>
+        <!-- style-embed -->
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
     </head>
-    <body>
-        <header>
-            <img src="/asset/resource/img/sultan-kautsar.webp" alt="Sultan Kautsar" />
-            <div>
-                <h1>Sultan Kautsar<img src="/asset/resource/img/icon-verified.svg" alt="Verified" /></h1>
-                <p>Founder | Business & Technology</p>
-                <a href="/tagmanager.html">Visit landing page<img src="/asset/resource/img/icon-arrow-right.svg" alt="Arrow Right" /></a>
+    <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+        <!-- gtm -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWNWFH7Z" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+        <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
+            <div class="layout-container flex h-full grow flex-col">
+                <!-- navigation-menu -->
+                <header class="flex justify-center whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 py-4 bg-background-light dark:bg-background-dark sticky top-0 z-50">
+                    <div class="flex items-center justify-between max-w-[1200px] w-full">
+                        <div class="flex items-center gap-2 text-primary">
+                            <a href="/" class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">Sultan Kautsar</a>
+                        </div>
+                        <div class="flex flex-1 justify-end gap-3 items-center">
+                            <nav class="hidden md:flex items-center gap-6 me-4">
+                                <a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#services">Services</a>
+                                <a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#pricing">Pricing</a>
+                                <a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+                            </nav>
+                            <button id="hireMeHeaderBtn" class="flex min-w-[100px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold transition-opacity hover:opacity-90">Hire Me</button>
+                            <button id="darkModeToggle" class="flex items-center justify-center size-10 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors hover:cursor-pointer" aria-label="Toggle dark mode">
+                                <span class="material-symbols-outlined text-slate-700 dark:text-slate-300">dark_mode</span>
+                            </button>
+                        </div>
+                    </div>
+                </header>
+                <main class="flex flex-col items-center">
+                    <!-- section-hero -->
+                    <section class="max-w-[1200px] w-full px-6 py-12 md:py-24">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                            <div class="flex flex-col gap-6">
+                                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider w-fit"><span class="material-symbols-outlined text-sm">verified</span> Verified Specialist</div>
+                                <h1 class="text-slate-900 dark:text-slate-100 text-4xl md:text-6xl font-black leading-tight tracking-tight">Expert Google Tag Manager &amp; Analytics Implementation</h1>
+                                <p class="text-slate-600 dark:text-slate-400 text-lg md:text-xl leading-relaxed">Helping businesses track what matters with precision. Integration, Conversion Setup, and Consent Management.</p>
+                                <div class="flex flex-wrap gap-4 pt-4">
+                                    <button id="hireMeHeroBtn" class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-lg font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">Hire Me - €65/hour</button>
+                                    <a href="#services" class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 border-2 border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 text-lg font-bold hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="relative">
+                                <div class="w-full aspect-square bg-gradient-to-br from-primary/20 to-primary/5 rounded-3xl overflow-hidden flex items-center justify-center border border-primary/10" data-alt="Abstract data visualization with glowing nodes and connections">
+                                    <img src="/img/workflow.webp" alt="Google Tag Manager Workflow" />
+                                </div>
+                                <div class="absolute -bottom-6 -left-4 lg:-left-6 bg-white dark:bg-background-dark p-6 rounded-xl shadow-xl border border-slate-100 dark:border-slate-800 flex items-center gap-4">
+                                    <div class="size-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Implementation Accuracy</p>
+                                        <p class="text-xl font-bold text-slate-900 dark:text-slate-100">100% Reliable</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- section-service -->
+                    <section class="w-full bg-slate-50 dark:bg-slate-900/50 py-20 px-6 flex justify-center" id="services">
+                        <div class="max-w-[1200px] w-full">
+                            <div class="flex flex-col gap-4 mb-12">
+                                <h2 class="text-primary text-sm font-bold tracking-widest uppercase">My Services</h2>
+                                <h3 class="text-slate-900 dark:text-slate-100 text-3xl md:text-4xl font-black">Data-Driven Solutions</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl">Comprehensive tracking setups tailored to your business needs, ensuring data integrity across all platforms.</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                <!-- tracking-integration -->
+                                <div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark p-6 hover:shadow-md transition-shadow">
+                                    <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                                        <span class="material-symbols-outlined">tag</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-slate-900 dark:text-slate-100 text-lg font-bold mb-2">Tracking Integration</h4>
+                                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Seamlessly deploy tracking codes and pixels across your entire web ecosystem.</p>
+                                    </div>
+                                </div>
+                                <!-- conversion-setup -->
+                                <div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark p-6 hover:shadow-md transition-shadow">
+                                    <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                                        <span class="material-symbols-outlined">target</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-slate-900 dark:text-slate-100 text-lg font-bold mb-2">Conversion Setup</h4>
+                                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Connect your business goals to actionable data by tracking key user interactions.</p>
+                                    </div>
+                                </div>
+                                <!-- consent-management -->
+                                <div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark p-6 hover:shadow-md transition-shadow">
+                                    <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                                        <span class="material-symbols-outlined">shield_lock</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-slate-900 dark:text-slate-100 text-lg font-bold mb-2">Consent Management</h4>
+                                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Ensure privacy compliance (GDPR/CCPA) with robust Consent Mode v2 setups.</p>
+                                    </div>
+                                </div>
+                                <!-- ga4-config -->
+                                <div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark p-6 hover:shadow-md transition-shadow">
+                                    <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                                        <span class="material-symbols-outlined">query_stats</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-slate-900 dark:text-slate-100 text-lg font-bold mb-2">GA4 Configuration</h4>
+                                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Expert Google Analytics 4 setup, event mapping, and legacy migration.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- section-about -->
+                    <section class="max-w-[1200px] w-full px-6 py-20" id="about">
+                        <div class="flex flex-col md:flex-row gap-16 items-center">
+                            <div class="w-full md:w-1/3">
+                                <div class="aspect-square bg-slate-200 dark:bg-slate-800 rounded-4xl overflow-hidden border border-primary/10 shadow-xl" data-alt="Professional headshot of a data analyst in a clean office setting">
+                                    <div class="w-full h-full bg-gradient-to-br from-slate-400 to-slate-600 flex items-center justify-center">
+                                        <img src="/img/sultan-kautsar.webp" alt="Sultan Kautsar" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-2/3 flex flex-col gap-6">
+                                <h2 class="text-3xl font-black">About Me</h2>
+                                <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">I'm a specialized GTM consultant with over 8 years of experience in the digital analytics space. My mission is to bridge the gap between technical implementation and business intelligence. I focus on creating clean, scalable tracking architectures that give stakeholders the confidence to make data-backed decisions.</p>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary">check</span>
+                                        <span class="font-medium">500+ Containers Managed</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary">check</span>
+                                        <span class="font-medium">GTM, GA4, GAds Specialist</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary">check</span>
+                                        <span class="font-medium">Server-Side Tracking</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary">check</span>
+                                        <span class="font-medium">Custom Template Developer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- section-pricing -->
+                    <section class="w-full py-20 px-6 flex justify-center bg-background-light dark:bg-background-dark" id="pricing">
+                        <div class="max-w-[1200px] w-full">
+                            <div class="text-center mb-16">
+                                <h2 class="text-slate-900 dark:text-slate-100 text-3xl font-black mb-4">Simple, Transparent Pricing</h2>
+                                <p class="text-slate-600 dark:text-slate-400">High-level expertise delivered through a flexible hourly model.</p>
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="w-full max-w-md rounded-2xl border-2 border-primary bg-white dark:bg-slate-900 p-8 shadow-2xl relative">
+                                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Best Value</div>
+                                    <div class="flex flex-col gap-6">
+                                        <div class="text-center">
+                                            <h3 class="text-xl font-bold mb-2">Expert Consultancy</h3>
+                                            <div class="flex items-center justify-center gap-1">
+                                                <span class="text-5xl font-black text-slate-900 dark:text-slate-100">€65</span>
+                                                <span class="text-slate-500 font-bold">/hour</span>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+                                            <div class="flex items-center gap-3">
+                                                <span class="material-symbols-outlined text-primary text-sm">check</span>
+                                                <span class="text-sm">GTM Container Audit &amp; Cleanup</span>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <span class="material-symbols-outlined text-primary text-sm">check</span>
+                                                <span class="text-sm">GA4 Advanced Event Tracking</span>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <span class="material-symbols-outlined text-primary text-sm">check</span>
+                                                <span class="text-sm">Enhanced Conversion Setup</span>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <span class="material-symbols-outlined text-primary text-sm">check</span>
+                                                <span class="text-sm">Consent Mode v2 Integration</span>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <span class="material-symbols-outlined text-primary text-sm">check</span>
+                                                <span class="text-sm">Server-side Tracking Setup</span>
+                                            </div>
+                                        </div>
+                                        <button id="bookSessionBtn" class="w-full bg-primary text-white h-12 rounded-lg font-bold shadow-lg shadow-primary/20 hover:opacity-90 transition-opacity mt-4 hover:cursor-pointer">Book a Strategy Session</button>
+                                        <p class="text-center text-xs text-slate-400 italic">No minimum commitment. Billing per 30min increments.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- section-cta -->
+                    <section class="w-full py-20 px-6 flex justify-center bg-primary">
+                        <div class="max-w-[800px] w-full text-center flex flex-col gap-8 text-white">
+                            <h2 class="text-4xl md:text-5xl font-black leading-tight">Ready to fix your tracking?</h2>
+                            <p class="text-lg opacity-90 leading-relaxed">Don't let bad data lead to poor marketing decisions. Get a professional GTM setup that scales with your growth.</p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                                <button id="startProjectBtn" class="bg-white text-primary px-10 h-14 rounded-lg font-bold text-lg hover:scale-105 transition-transform w-full sm:w-auto hover:cursor-pointer">Start Your Project</button>
+                                <a class="text-white font-bold underline underline-offset-4 hover:opacity-80 transition-opacity" href="mailto:contact@sultankautsar.com">Email me directly</a>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                <!-- footer -->
+                <footer class="w-full px-6 py-12 border-t border-slate-200 dark:border-slate-800 flex justify-center bg-background-light dark:bg-background-dark">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-[1200px] w-full">
+                        <div class="flex items-center gap-2 text-primary opacity-60">
+                            <span class="text-slate-900 dark:text-slate-100 font-bold">Sultan Kautsar</span>
+                        </div>
+                        <div class="flex gap-8 text-sm text-slate-500">
+                            <a class="hover:text-primary" href="/">Website</a>
+                            <a class="hover:text-primary" href="https://linkedin.com/in/sultankautsar">LinkedIn</a>
+                            <a class="hover:text-primary" href="https://github.com/bydzen">GitHub</a>
+                            <a class="hover:text-primary" href="http://instagram.com/bydzen">Instagram</a>
+                        </div>
+                        <p class="text-sm text-slate-400">© 2026 <a class="hover:text-primary" href="/">Sultan Kautsar</a>. All rights reserved.</p>
+                    </div>
+                </footer>
             </div>
-        </header>
-        <main>
-            <section>
-                <h2>The Introduction</h2>
-                <p>Hi, I'm Sultan Kautsar. I've always been curious about how technology can genuinely help people, not just impress them. That curiosity led me to build <a href="https://rayatiga.com/">Rayatiga</a>, not to chase big titles but to create solutions that quietly make a difference for businesses trying to grow.</p>
-                <p>I focus on web & mobile development and love working with small and medium enterprises because they're driven by real passion. For me, technology isn't about showing off, it's about making things work better for real people.</p>
-                <p>My background in Information Technology from Telkom University has shaped my technical skills in web & mobile development, cloud engineering, and business innovation. But I believe what matters even more is sincerity. I deliver every project carefully, listen first, and build with heart.</p>
-                <p>I'm always happy to meet people who share this mindset: to innovate not for the sake of being "modern," but to create meaningful impact together. If that resonates with you, feel free to reach out.</p>
-            </section>
-            <section>
-                <h2>The Experiences</h2>
-                <ul>
-                    <li>
-                        <strong>Founder, <a href="https://rayatiga.com/">Rayatiga</a> (2020 - Present)</strong> - Leading product development and business strategy to create practical digital solutions that help businesses grow.
-                    </li>
-                    <li>
-                        <strong>Software Engineer, <a href="https://flexypack.com/">FlexyPack</a> (2025 - Present)</strong> - Developing and maintaining multiple projects for enhanced user experience, reliability, and performance.
-                    </li>
-                    <li>
-                        <strong>Website Developer, <a href="https://breefstudio.com/">Breef Studio</a> (2023 - 2025)</strong> - Building and maintaining high-quality websites with a focus on performance and design consistency.
-                    </li>
-                    <li>
-                        <strong>Google Cloud Operation, <a href="https://www.dicoding.com/">PT Presentologics</a> (2022)</strong> - Managed and optimized cloud infrastructure for reliability and scalability.
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h2>The Studies</h2>
-                <ul>
-                    <li>
-                        <strong>Master of Cyber Security & Digital Forensic, <a href="https://telkomuniversity.ac.id">Telkom University</a> (2023, Incomplete)</strong> - Fast strack studied advanced topics in cybersecurity and digital investigations but did not complete the program.
-                    </li>
-                    <li>
-                        <strong>Bachelor of Information Technology, <a href="https://telkomuniversity.ac.id">Telkom University</a> (2019 - 2023)</strong> - Fast track studied professional topics IT systems, software development, networking, project management, and business innovation.
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h2>The Skills</h2>
-                <ul>
-                    <li><strong>Linux</strong> - Proficient in managing Linux systems for stable and secure operations.</li>
-                    <li><strong>Technical Support</strong> - Diagnose and resolve issues quickly to keep workflows smooth.</li>
-                    <li><strong>Business Innovation</strong> - Align technology with business goals to drive practical improvements.</li>
-                    <li><strong>Google Tag Manager</strong> - Implement and manage tags for accurate data collection and analysis.</li>
-                    <li><strong>Mobile Development</strong> - Utilize modern frameworks for scalable, maintainable applications.</li>
-                    <li><strong>WordPress Development</strong> - Build and customize fast, usable websites.</li>
-                    <li><strong>Vanilla Web Development</strong> - Create clean, efficient sites without heavy frameworks.</li>
-                    <li><strong>Cloud Platform Operations</strong> - Manage scalable, reliable cloud infrastructure.</li>
-                    <li><strong>Tech Documentation Writing</strong> - Produce neat docs for diverse audiences.</li>
-                </ul>
-            </section>
-            <section>
-                <h2>The Daily Driven</h2>
-                <ul>
-                    <li><strong>Arch</strong> - Go-to Linux distro for its customization and performance.</li>
-                    <li><strong>Figma</strong> - Design tool for creating and collaborating on UI/UX projects.</li>
-                    <li><strong>Firefox</strong> - Secondary browser for compatibility testing and privacy features.</li>
-                    <li><strong>GitHub</strong> - Code hosting platform for version control and collaboration.</li>
-                    <li><strong>VS Code</strong> - Primary code editor for its versatility and extensions.</li>
-                    <li><strong>Google Chrome</strong> - Main web browser for its speed and developer tools.</li>
-                </ul>
-            </section>
-            <section>
-                <h2>The Contacts</h2>
-                <ul>
-                    <li>
-                        GitHub: <strong><a href="https://github.com/bydzen">bydzen</a></strong>
-                    </li>
-                    <li>
-                        LinkedIn: <strong><a href="https://linkedin.com/in/sultankautsar">sultankautsar</a></strong>
-                    </li>
-                    <li>
-                        Email: <strong><a href="mailto:contact@sultankautsar.com">contact@sultankautsar.com</a></strong>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2025 Sultan Kautsar. All rights reserved.</p>
-        </footer>
+        </div>
+        <!-- modal-hire -->
+        <div id="hireModal" class="hidden fixed inset-0 z-[100]">
+            <!-- backdrop-background -->
+            <div class="fixed inset-0 bg-black/60 transition-opacity"></div>
+            <!-- modal-content -->
+            <div class="flex min-h-full items-center justify-center p-4">
+                <div class="relative bg-white dark:bg-background-dark rounded-2xl shadow-2xl w-full max-w-lg transform transition-all flex flex-col max-h-[90vh]">
+                    <!-- close-button -->
+                    <button id="closeModal" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors z-10 hover:cursor-pointer">
+                        <span class="material-symbols-outlined text- sm:text-3xl">close</span>
+                    </button>
+                    <!-- modal-header -->
+                    <div class="px-8 pt-8 pb-6 border-b border-slate-100 dark:border-slate-800 flex-shrink-0">
+                        <div class="flex items-center gap-3 mb-3 mr-3">
+                            <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined">handshake</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-slate-100">Let's Work Together</h3>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400">Fill out the form below and I'll get back to you within 24 hours.</p>
+                    </div>
+                    <!-- modal-body -->
+                    <div class="overflow-y-auto flex-1 px-8 py-6">
+                        <form id="hireForm" class="space-y-5">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2" for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="John Doe" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2" for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="john@company.com" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2" for="company">Company (Optional)</label>
+                                <input type="text" id="company" name="company" class="w-full px-4 py-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Your Company Inc." />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2" for="service">Service Needed</label>
+                                <!-- hidden-native-select -->
+                                <select id="service" name="service" required class="hidden">
+                                    <option value="">Select a service</option>
+                                    <option value="tracking-integration">Tracking Integration</option>
+                                    <option value="conversion-setup">Conversion Setup</option>
+                                    <option value="consent-management">Consent Management</option>
+                                    <option value="ga4-configuration">GA4 Configuration</option>
+                                    <option value="gtm-audit">GTM Container Audit</option>
+                                    <option value="server-side">Server-side Tracking</option>
+                                    <option value="consultation">General Consultation</option>
+                                </select>
+                                <!-- custom-dropdown -->
+                                <div class="relative">
+                                    <button type="button" id="customSelectBtn" class="w-full px-4 py-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-transparent transition-all flex items-center justify-between hover:border-slate-300 dark:hover:border-slate-600">
+                                        <span id="customSelectValue" class="text-slate-400">Select a service</span>
+                                        <span class="material-symbols-outlined text-slate-400 transition-transform duration-200" id="customSelectIcon">expand_more</span>
+                                    </button>
+                                    <div id="customSelectDropdown" class="hidden absolute z-50 w-full mt-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg shadow-xl max-h-64 overflow-y-auto">
+                                        <div class="py-1">
+                                            <button type="button" class="custom-option w-full px-4 py-3 text-left hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors flex items-center justify-between group" data-value="tracking-integration">
+                                                <div class="flex items-center gap-3">
+                                                    <span class="material-symbols-outlined text-primary text-xl">tag</span>
+                                                    <span class="text-slate-900 dark:text-slate-100">Tracking Integration</span>
+                                                </div>
+                                                <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">check</span>
+                                            </button>
+                                            <button type="button" class="custom-option w-full px-4 py-3 text-left hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors flex items-center justify-between group" data-value="conversion-setup">
+                                                <div class="flex items-center gap-3">
+                                                    <span class="material-symbols-outlined text-primary text-xl">target</span>
+                                                    <span class="text-slate-900 dark:text-slate-100">Conversion Setup</span>
+                                                </div>
+                                                <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">check</span>
+                                            </button>
+                                            <button type="button" class="custom-option w-full px-4 py-3 text-left hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors flex items-center justify-between group" data-value="consent-management">
+                                                <div class="flex items-center gap-3">
+                                                    <span class="material-symbols-outlined text-primary text-xl">shield_lock</span>
+                                                    <span class="text-slate-900 dark:text-slate-100">Consent Management</span>
+                                                </div>
+                                                <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">check</span>
+                                            </button>
+                                            <button type="button" class="custom-option w-full px-4 py-3 text-left hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors flex items-center justify-between group" data-value="ga4-configuration">
+                                                <div class="flex items-center gap-3">
+                                                    <span class="material-symbols-outlined text-primary text-xl">query_stats</span>
+                                                    <span class="text-slate-900 dark:text-slate-100">GA4 Configuration</span>
+                                                </div>
+                                                <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">check</span>
+                                            </button>
+                                            <button type="button" class="custom-option w-full px-4 py-3 text-left hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors flex items-center justify-between group" data-value="gtm-audit">
+                                                <div class="flex items-center gap-3">
+                                                    <span class="material-symbols-outlined text-primary text-xl">fact_check</span>
+                                                    <span class="text-slate-900 dark:text-slate-100">GTM Container Audit</span>
+                                                </div>
+                                                <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">check</span>
+                                            </button>
+                                            <button type="button" class="custom-option w-full px-4 py-3 text-left hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors flex items-center justify-between group" data-value="server-side">
+                                                <div class="flex items-center gap-3">
+                                                    <span class="material-symbols-outlined text-primary text-xl">dns</span>
+                                                    <span class="text-slate-900 dark:text-slate-100">Server-side Tracking</span>
+                                                </div>
+                                                <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">check</span>
+                                            </button>
+                                            <button type="button" class="custom-option w-full px-4 py-3 text-left hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors flex items-center justify-between group" data-value="consultation">
+                                                <div class="flex items-center gap-3">
+                                                    <span class="material-symbols-outlined text-primary text-xl">chat</span>
+                                                    <span class="text-slate-900 dark:text-slate-100">General Consultation</span>
+                                                </div>
+                                                <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">check</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2" for="message">Project Details</label>
+                                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none" placeholder="Tell me about your project and what you need help with..."></textarea>
+                            </div>
+                            <div class="bg-primary/5 border border-primary/20 rounded-lg p-4 flex items-start gap-3">
+                                <span class="material-symbols-outlined text-primary text-xl">info</span>
+                                <div class="text-sm">
+                                    <p class="font-bold text-slate-900 dark:text-slate-100 mb-1">Hourly Rate: €65/hour</p>
+                                    <p class="text-slate-600 dark:text-slate-400">Billed in 30-minute increments. No minimum commitment required.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- modal-footer -->
+                    <div class="px-8 py-6 border-t border-slate-100 dark:border-slate-800 flex-shrink-0">
+                        <div class="flex gap-3">
+                            <button type="submit" form="hireForm" id="submitFormBtn" class="flex-1 bg-primary text-white h-12 rounded-lg font-bold shadow-lg shadow-primary/20 hover:opacity-90 transition-opacity flex items-center justify-center gap-2 hover:cursor-pointer">
+                                <span>Send Request</span>
+                                <span class="material-symbols-outlined text-xl">send</span>
+                            </button>
+                            <button type="button" id="cancelModal" class="px-6 h-12 rounded-lg border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 font-bold hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors hover:cursor-pointer">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- consent-banner -->
+        <div id="consent-banner" class="hidden fixed inset-0 z-[1000]">
+            <!-- backdrop-background -->
+            <div class="fixed inset-0 bg-black/60 transition-opacity"></div>
+            <!-- banner-content -->
+            <div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[380px] p-4 rounded-lg text-center bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl">
+                <div class="consent-content">
+                    <p class="text-slate-800 dark:text-slate-200">We use cookies to enhance your experience. Do you agree to our data usage?</p>
+                    <div class="flex gap-2 mt-3 justify-center">
+                        <button id="decline-consent" class="px-4 py-2 rounded bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">Decline</button>
+                        <button id="accept-consent" class="px-4 py-2 rounded bg-[#065b93] text-white hover:bg-[#054a7a] transition-colors">Accept</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- toast-container -->
+        <div id="toastContainer" class="fixed top-4 right-4 z-[200] flex flex-col gap-3 pointer-events-none"></div>
+        <!-- javascript -->
+        <script src="script.js" async></script>
     </body>
 </html>
