@@ -1,72 +1,207 @@
 <!doctype html>
 <html lang="id">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="Virgiyan, Virgiyan Budi Utami, Sultan, Sultan Kautsar" />
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- primary-meta -->
+        <title>Virgiyan Budi Utami - Sultan Kautsar</title>
+        <meta name="title" content="Virgiyan Budi Utami - Sultan Kautsar" />
         <meta name="description" content="Virgiyan adalah sosok yang hadir seperti bisik lembut di tengah dunia yang terlalu bising; senyum hangatnya seolah meredakan sudut-sudut ruang yang tak pernah benar-benar tenang." />
-        <meta property="og:image" content="https://sultankautsar.com/asset/resource/img/sultan-kautsar-og.jpg" />
-        <title>Virgiyan Budi Utami</title>
-        <link rel="stylesheet" href="/asset/css/main.css" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="canonical" href="https://sultankautsar.com/v.html" />
-        <script type="text/javascript" src="/asset/js/main.js"></script>
+        <meta name="keywords" content="Virgiyan, Virgiyan Budi Utami, Sultan, Sultan Kautsar" />
+        <meta name="author" content="Sultan Kautsar" />
+        <meta name="robots" content="noindex, nofollow" />
+        <!-- canonical-url -->
+        <link rel="canonical" href="https://sultankautsar.com/v" />
+        <!-- open-graph -->
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://sultankautsar.com/v" />
+        <meta property="og:title" content="Virgiyan Budi Utami - Sultan Kautsar" />
+        <meta property="og:description" content="Virgiyan adalah sosok yang hadir seperti bisik lembut di tengah dunia yang terlalu bising; senyum hangatnya seolah meredakan sudut-sudut ruang yang tak pernah benar-benar tenang." />
+        <meta property="og:image" content="https://sultankautsar.com/img/v.webp" />
+        <!-- twitter-card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://sultankautsar.com/v" />
+        <meta name="twitter:title" content="Virgiyan Budi Utami - Sultan Kautsar" />
+        <meta name="twitter:description" content="Virgiyan adalah sosok yang hadir seperti bisik lembut di tengah dunia yang terlalu bising." />
+        <!-- additional-meta -->
+        <meta name="theme-color" content="#1152d4" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <!-- gtm -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-MWNWFH7Z");
+        </script>
+        <!-- consent -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            // check-existing-consent-inline
+            const cookieValue = document.cookie.split("; ").find((row) => row.startsWith("user_consent="));
+            const currentConsent = cookieValue ? cookieValue.split("=")[1] : null;
+            if (currentConsent === "granted") {
+                gtag("consent", "update", {
+                    ad_storage: "granted",
+                    analytics_storage: "granted",
+                    ad_user_data: "granted",
+                    ad_personalization: "granted",
+                    functionality_storage: "granted",
+                    security_storage: "granted",
+                });
+            }
+        </script>
+        <!-- link-style -->
+        <link rel="stylesheet" href="output.css" />
+        <!-- font-icon -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+        <!-- style-embed -->
         <style>
-            header {
-                gap: 0;
-                align-items: start;
-                flex-direction: column;
+            html {
+                scroll-behavior: smooth;
             }
-            header span {
-                color: #aaaaaa;
-                font-size: 12px;
+            @keyframes shimmer {
+                0% {
+                    background-position: -1000px 0;
+                }
+                100% {
+                    background-position: 1000px 0;
+                }
             }
-            section p {
-                text-align: justify;
-            }
-            section img {
-                max-height: 144px;
-                object-fit: cover;
-                border-radius: 8px;
-                margin-bottom: 16px;
-                aspect-ratio: 10 / 6;
-                box-shadow: 0 4px 8px #00000020;
-            }
-            section span {
-                color: #aaaaaa;
-                display: block;
-                font-size: 12px;
-                font-style: normal;
-            }
-            section span:nth-of-type(2) {
-                margin-bottom: 16px;
-            }
-            section .author {
-                color: #aaaaaa;
-                font-size: 12px;
-                margin-top: 24px;
-                font-style: normal;
+            .animate-shimmer {
+                animation: shimmer 3s infinite;
+                background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+                background-size: 1000px 100%;
             }
         </style>
     </head>
-    <body>
-        <header>
-            <h1>Virgiyan Budi Utami</h1>
-            <span>/ A Radiant Gem /</span>
-        </header>
-        <main>
-            <section>
-                <img src="/asset/resource/img/v.webp" alt="Virgiyan" fetchpriority="high" />
-                <span>July 14, 2019</span>
-                <span>Yogyakarta, Indonesia</span>
-                <p>Virgiyan adalah sosok yang hadir seperti bisik lembut di tengah dunia yang terlalu bising; senyum hangatnya seolah meredakan sudut-sudut ruang yang tak pernah benar-benar tenang. Dalam tubuhnya yang mungil dan kulitnya yang memantulkan cahaya tipis, ada sesuatu yang terasa seperti gema dari hal-hal halus yang tak pernah selesai dijelaskan. Warna-warna pastel yang ia pilih bukan sekadar selera, tapi semacam pantulan dari cahaya kecil yang ia simpan, cahaya yang tidak menuntut dilihat namun sulit diabaikan.</p>
-                <p>Laut baginya bukan tempat, tapi jeda; sebuah ruang di mana segala riuh berubah jadi gumaman yang lebih jujur. Ketenteraman itu tinggal di matanya, sama seperti cara ia memandang bunga, bukan sebagai benda rapuh tetapi sebagai kekuatan yang memilih untuk tetap lembut. Ada cara ia menghargai keheningan, seakan ia mengerti bahwa beberapa hal justru berbicara paling keras saat tidak bersuara.</p>
-                <p>Kerja kerasnya lahir bukan dari dorongan dunia luar, tapi dari keyakinan samar tentang masa depan yang belum ia lihat namun sudah ia percayai. Dedikasinya bergerak pelan namun dalam, menyatu dengan pikirannya yang penuh pertimbangan dan hatinya yang tidak pernah benar-benar ingin mencederai apa pun. Di dirinya ada campuran aneh antara kehalusan dan tekad; semacam angin pelan yang tetap mampu menggeser arah, meninggalkan kesan tanpa pernah berusaha menciptakannya.</p>
-                <p class="author">&mdash; sultankautsar.</p>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2025 Sultan Kautsar. All rights reserved.</p>
-        </footer>
+    <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+        <!-- gtm -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWNWFH7Z" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+        <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
+            <div class="layout-container flex h-full grow flex-col">
+                <!-- navigation-menu -->
+                <header class="flex justify-center whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 py-4 bg-background-light dark:bg-background-dark sticky top-0 z-50">
+                    <div class="flex items-center justify-between max-w-[1200px] w-full">
+                        <div class="flex items-center gap-2 text-primary">
+                            <a href="/" class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">Sultan Kautsar</a>
+                        </div>
+                        <div class="flex flex-1 justify-end gap-3 items-center">
+                            <button id="darkModeToggle" class="flex items-center justify-center size-10 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors hover:cursor-pointer" aria-label="Toggle dark mode">
+                                <span class="material-symbols-outlined text-slate-700 dark:text-slate-300">dark_mode</span>
+                            </button>
+                        </div>
+                    </div>
+                </header>
+                <main class="flex flex-col items-center flex-1">
+                    <!-- section-article -->
+                    <article class="max-w-[800px] w-full px-6 py-16 md:py-24">
+                        <!-- header-section -->
+                        <div class="flex flex-col gap-6 mb-12">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-400 text-xs font-bold uppercase tracking-wider w-fit">
+                                <span class="material-symbols-outlined text-base">favorite</span>
+                                A Radiant Gem
+                            </div>
+                            <h1 class="text-slate-900 dark:text-slate-100 text-4xl md:text-5xl font-black leading-tight tracking-tight">Virgiyan Budi Utami</h1>
+                            <div class="flex flex-wrap items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+                                <div class="flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-lg">calendar_today</span>
+                                    <span>July 14, 2019</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-lg">location_on</span>
+                                    <span>Yogyakarta, Indonesia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- featured-image -->
+                        <div class="mb-12 relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800">
+                            <img src="/img/v.webp" alt="Virgiyan Budi Utami" fetchpriority="high" class="w-full aspect-[16/9] object-cover" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent"></div>
+                        </div>
+                        <!-- content-section -->
+                        <div class="prose prose-lg max-w-none">
+                            <div class="flex flex-col gap-6 text-slate-700 dark:text-slate-300 leading-relaxed text-justify">
+                                <p class="text-lg">Virgiyan adalah sosok yang hadir seperti bisik lembut di tengah dunia yang terlalu bising; senyum hangatnya seolah meredakan sudut-sudut ruang yang tak pernah benar-benar tenang. Dalam tubuhnya yang mungil dan kulitnya yang memantulkan cahaya tipis, ada sesuatu yang terasa seperti gema dari hal-hal halus yang tak pernah selesai dijelaskan. Warna-warna pastel yang ia pilih bukan sekadar selera, tapi semacam pantulan dari cahaya kecil yang ia simpan, cahaya yang tidak menuntut dilihat namun sulit diabaikan.</p>
+                                <p class="text-lg">Laut baginya bukan tempat, tapi jeda; sebuah ruang di mana segala riuh berubah jadi gumaman yang lebih jujur. Ketenteraman itu tinggal di matanya, sama seperti cara ia memandang bunga, bukan sebagai benda rapuh tetapi sebagai kekuatan yang memilih untuk tetap lembut. Ada cara ia menghargai keheningan, seakan ia mengerti bahwa beberapa hal justru berbicara paling keras saat tidak bersuara.</p>
+                                <p class="text-lg">Kerja kerasnya lahir bukan dari dorongan dunia luar, tapi dari keyakinan samar tentang masa depan yang belum ia lihat namun sudah ia percayai. Dedikasinya bergerak pelan namun dalam, menyatu dengan pikirannya yang penuh pertimbangan dan hatinya yang tidak pernah benar-benar ingin mencederai apa pun. Di dirinya ada campuran aneh antara kehalusan dan tekad; semacam angin pelan yang tetap mampu menggeser arah, meninggalkan kesan tanpa pernah berusaha menciptakannya.</p>
+                            </div>
+                            <!-- author-signature -->
+                            <div class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800">
+                                <p class="text-slate-500 dark:text-slate-400 text-lg italic">&mdash; sultankautsar.</p>
+                            </div>
+                        </div>
+                        <!-- decorative-elements -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16">
+                            <div class="flex flex-col p-6 rounded-xl border border-pink-200 dark:border-pink-900/30 bg-pink-50 dark:bg-pink-900/10">
+                                <span class="material-symbols-outlined text-pink-600 dark:text-pink-400 text-3xl mb-2">water_drop</span>
+                                <h3 class="font-bold text-slate-900 dark:text-slate-100">Ocean's Whisper</h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Finding peace in the waves</p>
+                            </div>
+                            <div class="flex flex-col p-6 rounded-xl border border-pink-200 dark:border-pink-900/30 bg-pink-50 dark:bg-pink-900/10">
+                                <span class="material-symbols-outlined text-pink-600 dark:text-pink-400 text-3xl mb-2">local_florist</span>
+                                <h3 class="font-bold text-slate-900 dark:text-slate-100">Gentle Strength</h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Soft yet resilient</p>
+                            </div>
+                            <div class="flex flex-col p-6 rounded-xl border border-pink-200 dark:border-pink-900/30 bg-pink-50 dark:bg-pink-900/10">
+                                <span class="material-symbols-outlined text-pink-600 dark:text-pink-400 text-3xl mb-2">brightness_5</span>
+                                <h3 class="font-bold text-slate-900 dark:text-slate-100">Quiet Radiance</h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">A light that doesn't demand</p>
+                            </div>
+                        </div>
+                        <!-- back-button -->
+                        <div class="mt-16 flex justify-center">
+                            <a href="/" class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-lg font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">
+                                <span class="material-symbols-outlined mr-2">arrow_back</span>
+                                Back to Home
+                            </a>
+                        </div>
+                    </article>
+                </main>
+                <!-- footer -->
+                <footer class="w-full px-6 py-12 border-t border-slate-200 dark:border-slate-800 flex justify-center bg-background-light dark:bg-background-dark">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-[1200px] w-full">
+                        <div class="flex items-center gap-2 text-primary opacity-60">
+                            <span class="text-slate-900 dark:text-slate-100 font-bold">Sultan Kautsar</span>
+                        </div>
+                        <div class="flex gap-8 text-sm text-slate-500">
+                            <a class="hover:text-primary" href="/">Website</a>
+                            <a class="hover:text-primary" href="https://linkedin.com/in/sultankautsar">LinkedIn</a>
+                            <a class="hover:text-primary" href="https://github.com/bydzen">GitHub</a>
+                            <a class="hover:text-primary" href="http://instagram.com/bydzen">Instagram</a>
+                        </div>
+                        <p class="text-sm text-slate-400">© 2026 <a class="hover:text-primary" href="/">Sultan Kautsar</a>. All rights reserved.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- consent-banner -->
+        <div id="consent-banner" class="hidden fixed inset-0 z-[1000]">
+            <!-- backdrop-background -->
+            <div class="fixed inset-0 bg-black/60 transition-opacity"></div>
+            <!-- banner-content -->
+            <div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[380px] p-4 rounded-lg text-center bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl">
+                <div class="consent-content">
+                    <p class="text-slate-800 dark:text-slate-200">We use cookies to enhance your experience. Do you agree to our data usage?</p>
+                    <div class="flex gap-2 mt-3 justify-center">
+                        <button id="decline-consent" class="px-4 py-2 rounded bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">Decline</button>
+                        <button id="accept-consent" class="px-4 py-2 rounded bg-[#065b93] text-white hover:bg-[#054a7a] transition-colors">Accept</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- javascript -->
+        <script src="script.js" async></script>
     </body>
 </html>
