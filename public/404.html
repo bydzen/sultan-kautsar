@@ -1,31 +1,46 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <!-- ========================= -->
+        <!-- meta-system -->
+        <!-- ========================= -->
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- primary-meta -->
         <title>404 Not Found - Sultan Kautsar</title>
+        <!-- ========================= -->
+        <!-- meta-tag -->
+        <!-- ========================= -->
         <meta name="title" content="404 Not Found - Sultan Kautsar" />
         <meta name="description" content="The page you're looking for doesn't exist. Let's get you back on track." />
         <meta name="author" content="Sultan Kautsar" />
         <meta name="robots" content="noindex, nofollow" />
+        <!-- ========================= -->
         <!-- canonical-url -->
+        <!-- ========================= -->
         <link rel="canonical" href="https://sultankautsar.com/404" />
+        <!-- ========================= -->
         <!-- open-graph -->
+        <!-- ========================= -->
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sultankautsar.com/404" />
         <meta property="og:title" content="404 Not Found - Sultan Kautsar" />
         <meta property="og:description" content="The page you're looking for doesn't exist. Let's get you back on track." />
+        <!-- ========================= -->
         <!-- twitter-card -->
+        <!-- ========================= -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://sultankautsar.com/404" />
         <meta name="twitter:title" content="404 Not Found - Sultan Kautsar" />
-        <!-- additional-meta -->
+        <!-- ========================= -->
+        <!-- theme-meta -->
+        <!-- ========================= -->
         <meta name="theme-color" content="#1152d4" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <!-- gtm -->
+        <!-- ========================= -->
+        <!-- google-tag-manager -->
+        <!-- ========================= -->
         <script>
             (function (w, d, s, l, i) {
                 w[l] = w[l] || [];
@@ -38,32 +53,18 @@
                 f.parentNode.insertBefore(j, f);
             })(window, document, "script", "dataLayer", "GTM-MWNWFH7Z");
         </script>
-        <!-- consent -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            // check-existing-consent-inline
-            const cookieValue = document.cookie.split("; ").find((row) => row.startsWith("user_consent="));
-            const currentConsent = cookieValue ? cookieValue.split("=")[1] : null;
-            if (currentConsent === "granted") {
-                gtag("consent", "update", {
-                    ad_storage: "granted",
-                    analytics_storage: "granted",
-                    ad_user_data: "granted",
-                    ad_personalization: "granted",
-                    functionality_storage: "granted",
-                    security_storage: "granted",
-                });
-            }
-        </script>
-        <!-- link-style -->
+        <!-- ========================= -->
+        <!-- style-css -->
+        <!-- ========================= -->
         <link rel="stylesheet" href="output.css" />
+        <!-- ========================= -->
         <!-- font-icon -->
+        <!-- ========================= -->
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+        <!-- ========================= -->
         <!-- style-embed -->
+        <!-- ========================= -->
         <style>
             html {
                 scroll-behavior: smooth;
@@ -94,82 +95,85 @@
             }
         </style>
     </head>
+    <!-- ========================= -->
+    <!-- body -->
+    <!-- ========================= -->
     <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
-        <!-- gtm -->
+        <!-- ========================= -->
+        <!-- google-tag-manager -->
+        <!-- ========================= -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWNWFH7Z" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
-        <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
-            <div class="layout-container flex h-full grow flex-col">
-                <!-- navigation-menu -->
-                <header class="flex justify-center whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 py-4 bg-background-light dark:bg-background-dark sticky top-0 z-50">
+        <div class="relative flex flex-col w-full h-auto min-h-screen group/design-root">
+            <div class="flex flex-col h-full layout-container grow">
+                <!-- ========================= -->
+                <!-- header -->
+                <!-- ========================= -->
+                <header class="sticky top-0 z-50 flex justify-center px-6 py-4 border-b border-solid whitespace-nowrap border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark">
                     <div class="flex items-center justify-between max-w-[1200px] w-full">
                         <div class="flex items-center gap-2 text-primary">
-                            <a href="/" class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">Sultan Kautsar</a>
+                            <a href="/" class="text-lg font-bold leading-tight tracking-tight text-slate-900 dark:text-slate-100">Sultan Kautsar</a>
                         </div>
-                        <div class="flex flex-1 justify-end gap-3 items-center">
-                            <button id="darkModeToggle" class="flex items-center justify-center size-10 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors hover:cursor-pointer" aria-label="Toggle dark mode">
+                        <div class="flex items-center justify-end flex-1 gap-3">
+                            <button id="darkModeToggle" class="flex items-center justify-center transition-colors border rounded-lg size-10 border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 hover:cursor-pointer" aria-label="Toggle dark mode">
                                 <span class="material-symbols-outlined text-slate-700 dark:text-slate-300">dark_mode</span>
                             </button>
                         </div>
                     </div>
                 </header>
                 <main class="flex flex-col items-center flex-1">
+                    <!-- ========================= -->
                     <!-- section-404 -->
+                    <!-- ========================= -->
                     <section class="max-w-[800px] w-full px-6 py-20 flex items-center justify-center flex-1">
-                        <div class="text-center flex flex-col items-center gap-8">
-                            <!-- error-icon -->
+                        <div class="flex flex-col items-center gap-8 text-center">
                             <div class="relative">
-                                <div class="size-32 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center animate-float">
+                                <div class="flex items-center justify-center rounded-full size-32 bg-amber-100 dark:bg-amber-900/30 animate-float">
                                     <span class="material-symbols-outlined text-amber-600 dark:text-amber-400" style="font-size: 80px">search_off</span>
                                 </div>
-                                <!-- particles -->
                                 <div class="absolute inset-0 -z-10">
-                                    <div class="absolute top-0 left-1/2 -translate-x-1/2 size-32 rounded-full bg-amber-500/10 animate-pulse-slow"></div>
+                                    <div class="absolute top-0 -translate-x-1/2 rounded-full left-1/2 size-32 bg-amber-500/10 animate-pulse-slow"></div>
                                 </div>
                             </div>
-                            <!-- message -->
                             <div class="flex flex-col gap-4">
-                                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 text-sm font-bold uppercase tracking-wider mx-auto">
-                                    <span class="material-symbols-outlined text-base">warning</span>
+                                <div class="inline-flex items-center gap-2 px-3 py-1 mx-auto text-sm font-bold tracking-wider uppercase rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400">
+                                    <span class="text-base material-symbols-outlined">warning</span>
                                     404 Error
                                 </div>
-                                <h1 class="text-slate-900 dark:text-slate-100 text-4xl md:text-5xl font-black leading-tight">Oops! Page Not Found</h1>
-                                <p class="text-slate-600 dark:text-slate-400 text-xl leading-relaxed max-w-2xl">The page you're looking for doesn't exist or has been moved. Let's get you back on track.</p>
+                                <h1 class="text-4xl font-black leading-tight text-slate-900 dark:text-slate-100 md:text-5xl">Oops! Page Not Found</h1>
+                                <p class="max-w-2xl text-xl leading-relaxed text-slate-600 dark:text-slate-400">The page you're looking for doesn't exist or has been moved. Let's get you back on track.</p>
                             </div>
-                            <!-- quick-links -->
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full mt-8">
-                                <a href="/" class="flex flex-col p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-primary hover:shadow-lg hover:shadow-primary/10 transition-all group">
-                                    <span class="material-symbols-outlined text-primary text-3xl mb-2 group-hover:scale-110 transition-transform">home</span>
+                            <div class="grid w-full grid-cols-1 gap-4 mt-8 md:grid-cols-3">
+                                <a href="/" class="flex flex-col p-6 transition-all bg-white border rounded-xl border-slate-200 dark:border-slate-800 dark:bg-slate-900 hover:border-primary hover:shadow-lg hover:shadow-primary/10 group">
+                                    <span class="mb-2 text-3xl transition-transform material-symbols-outlined text-primary group-hover:scale-110">home</span>
                                     <h3 class="font-bold text-slate-900 dark:text-slate-100">Homepage</h3>
                                     <p class="text-sm text-slate-600 dark:text-slate-400">Return to main page</p>
                                 </a>
-                                <a href="/#services" class="flex flex-col p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-primary hover:shadow-lg hover:shadow-primary/10 transition-all group">
-                                    <span class="material-symbols-outlined text-primary text-3xl mb-2 group-hover:scale-110 transition-transform">business_center</span>
+                                <a href="/#services" class="flex flex-col p-6 transition-all bg-white border rounded-xl border-slate-200 dark:border-slate-800 dark:bg-slate-900 hover:border-primary hover:shadow-lg hover:shadow-primary/10 group">
+                                    <span class="mb-2 text-3xl transition-transform material-symbols-outlined text-primary group-hover:scale-110">business_center</span>
                                     <h3 class="font-bold text-slate-900 dark:text-slate-100">Services</h3>
                                     <p class="text-sm text-slate-600 dark:text-slate-400">View what I offer</p>
                                 </a>
-                                <a href="/#pricing" class="flex flex-col p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-primary hover:shadow-lg hover:shadow-primary/10 transition-all group">
-                                    <span class="material-symbols-outlined text-primary text-3xl mb-2 group-hover:scale-110 transition-transform">euro</span>
+                                <a href="/#pricing" class="flex flex-col p-6 transition-all bg-white border rounded-xl border-slate-200 dark:border-slate-800 dark:bg-slate-900 hover:border-primary hover:shadow-lg hover:shadow-primary/10 group">
+                                    <span class="mb-2 text-3xl transition-transform material-symbols-outlined text-primary group-hover:scale-110">euro</span>
                                     <h3 class="font-bold text-slate-900 dark:text-slate-100">Pricing</h3>
                                     <p class="text-sm text-slate-600 dark:text-slate-400">Check rates & packages</p>
                                 </a>
                             </div>
-                            <!-- help-section -->
-                            <div class="w-full p-8 py-10 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800">
-                                <h2 class="text-2xl font-black mb-4 text-slate-900 dark:text-slate-100">Need Help?</h2>
-                                <p class="text-slate-600 dark:text-slate-400 mb-6">If you believe this is an error or need assistance finding what you're looking for, feel free to reach out.</p>
-                                <div class="flex flex-col sm:flex-row gap-3 justify-center">
-                                    <a href="https://linkedin.com/in/sultankautsar" target="_blank" class="flex items-center gap-2 px-6 py-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 font-medium hover:border-primary transition-colors">
-                                        <span class="material-symbols-outlined text-xl">phone</span>
+                            <div class="w-full p-8 py-10 border rounded-2xl bg-slate-50 dark:bg-slate-900/50 border-slate-200 dark:border-slate-800">
+                                <h2 class="mb-4 text-2xl font-black text-slate-900 dark:text-slate-100">Need Help?</h2>
+                                <p class="mb-6 text-slate-600 dark:text-slate-400">If you believe this is an error or need assistance finding what you're looking for, feel free to reach out.</p>
+                                <div class="flex flex-col justify-center gap-3 sm:flex-row">
+                                    <a href="https://linkedin.com/in/sultankautsar" target="_blank" class="flex items-center gap-2 px-6 py-3 font-medium transition-colors bg-white border rounded-lg dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 hover:border-primary">
+                                        <span class="text-xl material-symbols-outlined">phone</span>
                                         <span>Contact Me</span>
                                     </a>
-                                    <a href="mailto:contact@sultankautsar.com" class="flex items-center gap-2 px-6 py-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 font-medium hover:border-primary transition-colors">
-                                        <span class="material-symbols-outlined text-xl">mail</span>
+                                    <a href="mailto:contact@sultankautsar.com" class="flex items-center gap-2 px-6 py-3 font-medium transition-colors bg-white border rounded-lg dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 hover:border-primary">
+                                        <span class="text-xl material-symbols-outlined">mail</span>
                                         <span>Send Email</span>
                                     </a>
                                 </div>
                             </div>
-                            <!-- cta-buttons -->
-                            <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                            <div class="flex flex-col gap-4 mt-8 sm:flex-row">
                                 <a href="/" class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-lg font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">Go to Homepage</a>
                                 <button onclick="history.back()" class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 border-2 border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 text-lg font-bold hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors">
                                     <span>Go Back</span>
@@ -178,11 +182,13 @@
                         </div>
                     </section>
                 </main>
+                <!-- ========================= -->
                 <!-- footer -->
-                <footer class="w-full px-6 py-12 border-t border-slate-200 dark:border-slate-800 flex justify-center bg-background-light dark:bg-background-dark">
+                <!-- ========================= -->
+                <footer class="flex justify-center w-full px-6 py-12 border-t border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark">
                     <div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-[1200px] w-full">
                         <div class="flex items-center gap-2 text-primary opacity-60">
-                            <span class="text-slate-900 dark:text-slate-100 font-bold">Sultan Kautsar</span>
+                            <a href="/" class="font-bold transition text-slate-900 dark:text-slate-100 hover:text-primary">Sultan Kautsar</a>
                         </div>
                         <div class="flex gap-8 text-sm text-slate-500">
                             <a class="hover:text-primary" href="/">Website</a>
@@ -195,25 +201,43 @@
                 </footer>
             </div>
         </div>
-        <!-- consent-banner -->
-        <div id="consent-banner" class="hidden fixed inset-0 z-[1000]">
-            <!-- backdrop-background -->
-            <div class="fixed inset-0 bg-black/60 transition-opacity"></div>
-            <!-- banner-content -->
-            <div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[380px] p-4 rounded-lg text-center bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl">
-                <div class="consent-content">
-                    <p class="text-slate-800 dark:text-slate-200">We use cookies to enhance your experience. Do you agree to our data usage?</p>
-                    <div class="flex gap-2 mt-3 justify-center">
-                        <button id="decline-consent" class="px-4 py-2 rounded bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">Decline</button>
-                        <button id="accept-consent" class="px-4 py-2 rounded bg-[#065b93] text-white hover:bg-[#054a7a] transition-colors">Accept</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- javascript -->
-        <script src="script.js" async></script>
+        <!-- ========================= -->
+        <!-- script-javascript -->
+        <!-- ========================= -->
         <script>
-            // push-404-page-view-event
+            // =========================
+            // dark-mode-toggle
+            // =========================
+            const darkModeToggle = document.getElementById("darkModeToggle");
+            const html = document.documentElement;
+            const currentTheme = localStorage.getItem("theme") || "light";
+            if (currentTheme === "dark") {
+                html.classList.add("dark");
+                updateDarkModeIcon(true);
+            } else {
+                html.classList.remove("dark");
+                updateDarkModeIcon(false);
+            }
+            function updateDarkModeIcon(isDark) {
+                const icon = darkModeToggle.querySelector(".material-symbols-outlined");
+                icon.textContent = isDark ? "light_mode" : "dark_mode";
+            }
+            darkModeToggle.addEventListener("click", () => {
+                const isDark = html.classList.toggle("dark");
+                localStorage.setItem("theme", isDark ? "dark" : "light");
+                updateDarkModeIcon(isDark);
+            });
+            // =========================
+            // copyright-year
+            // =========================
+            const copyright = document.querySelector("footer p");
+            if (copyright) {
+                const currentYear = new Date().getFullYear();
+                copyright.textContent = copyright.textContent.replace("2025", currentYear);
+            }
+            // =========================
+            // page-not-found-event
+            // =========================
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
                 event: "page_not_found",
