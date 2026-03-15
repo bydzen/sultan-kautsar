@@ -1,49 +1,50 @@
 <!doctype html>
 <html lang="id">
     <head>
-        <!-- ========================= -->
         <!-- meta-system -->
-        <!-- ========================= -->
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Virgiyan Budi Utami - Sultan Kautsar</title>
-        <!-- ========================= -->
         <!-- meta-tag -->
-        <!-- ========================= -->
         <meta name="title" content="Virgiyan Budi Utami - Sultan Kautsar" />
         <meta name="description" content="Virgiyan adalah sosok yang hadir seperti bisik lembut di tengah dunia yang terlalu bising; senyum hangatnya seolah meredakan sudut-sudut ruang yang tak pernah benar-benar tenang." />
         <meta name="keywords" content="Virgiyan, Virgiyan Budi Utami, Sultan, Sultan Kautsar" />
         <meta name="author" content="Sultan Kautsar" />
         <meta name="robots" content="index, follow" />
-        <!-- ========================= -->
         <!-- canonical-url -->
-        <!-- ========================= -->
         <link rel="canonical" href="https://sultankautsar.com/v" />
-        <!-- ========================= -->
         <!-- open-graph -->
-        <!-- ========================= -->
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://sultankautsar.com/v" />
         <meta property="og:title" content="Virgiyan Budi Utami - Sultan Kautsar" />
         <meta property="og:description" content="Virgiyan adalah sosok yang hadir seperti bisik lembut di tengah dunia yang terlalu bising; senyum hangatnya seolah meredakan sudut-sudut ruang yang tak pernah benar-benar tenang." />
         <meta property="og:image" content="https://sultankautsar.com/img/v.webp" />
-        <!-- ========================= -->
         <!-- twitter-card -->
-        <!-- ========================= -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://sultankautsar.com/v" />
         <meta name="twitter:title" content="Virgiyan Budi Utami - Sultan Kautsar" />
         <meta name="twitter:description" content="Virgiyan adalah sosok yang hadir seperti bisik lembut di tengah dunia yang terlalu bising." />
-        <!-- ========================= -->
         <!-- theme-meta -->
-        <!-- ========================= -->
         <meta name="theme-color" content="#1152d4" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <!-- ========================= -->
+        <!-- consent-default -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            var savedConsent = localStorage.getItem("consent_mode") || "denied";
+            gtag("consent", "default", {
+                ad_storage: savedConsent,
+                ad_user_data: savedConsent,
+                ad_personalization: savedConsent,
+                analytics_storage: savedConsent,
+                wait_for_update: 500,
+            });
+        </script>
         <!-- google-tag-manager -->
-        <!-- ========================= -->
         <script>
             (function (w, d, s, l, i) {
                 w[l] = w[l] || [];
@@ -56,18 +57,12 @@
                 f.parentNode.insertBefore(j, f);
             })(window, document, "script", "dataLayer", "GTM-MWNWFH7Z");
         </script>
-        <!-- ========================= -->
         <!-- style-css -->
-        <!-- ========================= -->
         <link rel="stylesheet" href="output.css" />
-        <!-- ========================= -->
         <!-- font-icon -->
-        <!-- ========================= -->
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
-        <!-- ========================= -->
         <!-- style-embed -->
-        <!-- ========================= -->
         <style>
             html {
                 scroll-behavior: smooth;
@@ -87,19 +82,13 @@
             }
         </style>
     </head>
-    <!-- ========================= -->
     <!-- body -->
-    <!-- ========================= -->
     <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
-        <!-- ========================= -->
         <!-- google-tag-manager -->
-        <!-- ========================= -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWNWFH7Z" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
         <div class="relative flex flex-col w-full h-auto min-h-screen group/design-root">
             <div class="flex flex-col h-full layout-container grow">
-                <!-- ========================= -->
                 <!-- header -->
-                <!-- ========================= -->
                 <header class="sticky top-0 z-50 flex justify-center px-6 py-4 border-b border-solid whitespace-nowrap border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark">
                     <div class="flex items-center justify-between max-w-[1200px] w-full">
                         <div class="flex items-center gap-2 text-primary">
@@ -113,9 +102,7 @@
                     </div>
                 </header>
                 <main class="flex flex-col items-center flex-1">
-                    <!-- ========================= -->
                     <!-- section-article -->
-                    <!-- ========================= -->
                     <article class="max-w-[800px] w-full px-6 py-16 md:py-24">
                         <div class="flex flex-col gap-6 mb-12">
                             <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-bold tracking-wider text-pink-700 uppercase bg-pink-100 rounded-full dark:bg-pink-900/30 dark:text-pink-400 w-fit">
@@ -173,9 +160,7 @@
                         </div>
                     </article>
                 </main>
-                <!-- ========================= -->
                 <!-- footer -->
-                <!-- ========================= -->
                 <footer class="flex justify-center w-full px-6 py-12 border-t border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark">
                     <div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-[1200px] w-full">
                         <div class="flex items-center gap-2 text-primary opacity-60">
@@ -192,13 +177,67 @@
                 </footer>
             </div>
         </div>
-        <!-- ========================= -->
+        <!-- consent-banner -->
+        <div id="consent-banner" class="fixed inset-0 z-[300] hidden items-center justify-center bg-black/50 p-4">
+            <div class="w-full max-w-md rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl dark:border-slate-700 dark:bg-slate-900">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="flex items-center justify-center rounded-lg size-12 bg-primary/10 text-primary">
+                        <span class="material-symbols-outlined">privacy_tip</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100">We Value Your Privacy</h3>
+                </div>
+                <p class="text-base font-medium leading-relaxed text-slate-700 dark:text-slate-300">Your privacy matters to us. We use first and third-party cookies to maintain site security, improve our services, and show you relevant advertising based on your interests. This includes sharing data with Google for ad personalization and measurement. Clicking 'Accept All' allows us to provide a more tailored experience.</p>
+                <div class="mt-5 flex flex-col gap-3 sm:flex-row sm:justify-end">
+                    <button id="consent-reject" type="button" class="h-11 rounded-lg border border-slate-300 px-5 text-sm font-bold text-slate-700 transition-colors hover:bg-slate-50 dark:border-slate-600 dark:text-slate-200 dark:hover:bg-slate-800 hover:cursor-pointer">Reject All</button>
+                    <button id="consent-accept" type="button" class="h-11 rounded-lg bg-primary px-5 text-sm font-bold text-white transition-opacity hover:opacity-90 hover:cursor-pointer">Accept All</button>
+                </div>
+            </div>
+        </div>
         <!-- script-javascript -->
-        <!-- ========================= -->
         <script>
-            // =========================
+            // consent-script
+            function updateConsent(status) {
+                gtag("consent", "update", {
+                    ad_storage: status,
+                    ad_user_data: status,
+                    ad_personalization: status,
+                    analytics_storage: status,
+                });
+                consentBanner.classList.add("hidden");
+                consentBanner.classList.remove("flex");
+                localStorage.setItem("consent_mode", status);
+                removeConsentTriggers();
+            }
+            const consentBanner = document.getElementById("consent-banner");
+            const consentAcceptBtn = document.getElementById("consent-accept");
+            const consentRejectBtn = document.getElementById("consent-reject");
+            const consentTriggerEvents = ["click", "scroll", "keydown", "touchstart"];
+            let consentBannerShown = false;
+            function showConsentBannerOnInteraction() {
+                if (consentBannerShown || localStorage.getItem("consent_mode")) {
+                    return;
+                }
+                consentBannerShown = true;
+                consentBanner.classList.remove("hidden");
+                consentBanner.classList.add("flex");
+                removeConsentTriggers();
+            }
+            function addConsentTriggers() {
+                consentTriggerEvents.forEach((eventName) => {
+                    window.addEventListener(eventName, showConsentBannerOnInteraction, { once: true, passive: true });
+                });
+            }
+            function removeConsentTriggers() {
+                consentTriggerEvents.forEach((eventName) => {
+                    window.removeEventListener(eventName, showConsentBannerOnInteraction);
+                });
+            }
+            if (!localStorage.getItem("consent_mode")) {
+                addConsentTriggers();
+            }
+            consentAcceptBtn.addEventListener("click", () => updateConsent("granted"));
+            consentRejectBtn.addEventListener("click", () => updateConsent("denied"));
             // dark-mode-toggle
-            // =========================
             const darkModeToggle = document.getElementById("darkModeToggle");
             const html = document.documentElement;
             const currentTheme = localStorage.getItem("theme") || "light";
@@ -218,9 +257,7 @@
                 localStorage.setItem("theme", isDark ? "dark" : "light");
                 updateDarkModeIcon(isDark);
             });
-            // =========================
             // copyright-year
-            // =========================
             const copyright = document.querySelector("footer p");
             if (copyright) {
                 const currentYear = new Date().getFullYear();
