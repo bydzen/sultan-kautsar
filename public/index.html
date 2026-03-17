@@ -77,19 +77,52 @@
                 "@context": "https://schema.org",
                 "@graph": [
                     {
+                        "@type": "WebSite",
+                        "@id": "https://sultankautsar.com/#website",
+                        "url": "https://sultankautsar.com",
+                        "name": "Sultan Kautsar - GTM Specialist",
+                        "description": "Technical tracking consultancy website for GTM and GA4 implementation.",
+                        "inLanguage": "en-US",
+                        "publisher": {
+                            "@id": "https://sultankautsar.com/#person"
+                        }
+                    },
+                    {
                         "@type": "Person",
                         "@id": "https://sultankautsar.com/#person",
                         "name": "Sultan Kautsar",
+                        "givenName": "Sultan",
+                        "familyName": "Kautsar",
                         "url": "https://sultankautsar.com",
                         "image": "https://sultankautsar.com/img/sultan-kautsar.webp",
                         "jobTitle": "Google Tag Manager & GA4 Specialist",
-                        "description": "GTM & GA4 Specialist with 5+ years of experience. Expert in tracking integration, conversion setup, and Consent Mode v2.",
+                        "description": "Specialized GTM consultant with 5+ years of digital analytics experience focused on tracking integration, conversion setup, Consent Mode v2, and scalable measurement architecture.",
                         "email": "contact@sultankautsar.com",
-                        "knowsAbout": ["Google Tag Manager", "Google Analytics 4", "Conversion Tracking", "Consent Mode v2", "GDPR Compliance", "Server-side Tracking", "Digital Analytics"],
+                        "worksFor": {
+                            "@id": "https://sultankautsar.com/#service"
+                        },
+                        "knowsAbout": ["Google Tag Manager", "Google Analytics 4", "Conversion Tracking", "Consent Mode v2", "GDPR Compliance", "Server-side Tracking", "Digital Analytics", "GTM Container Audit", "Enhanced Conversion Setup"],
+                        "knowsLanguage": ["en"],
                         "sameAs": ["https://linkedin.com/in/sultankautsar", "https://github.com/bydzen", "https://instagram.com/bydzen"],
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "contactType": "sales",
+                            "email": "contact@sultankautsar.com",
+                            "availableLanguage": ["English"],
+                            "areaServed": "Worldwide"
+                        },
                         "alumniOf": {
                             "@type": "Organization",
                             "name": "Digital Analytics Professional"
+                        },
+                        "hasOccupation": {
+                            "@type": "Occupation",
+                            "name": "Technical Tracking Consultant",
+                            "occupationLocation": {
+                                "@type": "Place",
+                                "name": "Worldwide"
+                            },
+                            "skills": "GTM, GA4, Consent Mode v2, Server-side Tracking"
                         }
                     },
                     {
@@ -100,54 +133,173 @@
                         "url": "https://sultankautsar.com",
                         "image": "https://sultankautsar.com/img/hero.webp",
                         "priceRange": "€65/hour",
-                        "telephone": "contact@sultankautsar.com",
+                        "email": "contact@sultankautsar.com",
                         "address": {
                             "@type": "PostalAddress",
                             "addressCountry": "Worldwide"
                         },
                         "areaServed": "Worldwide",
-                        "serviceType": "Digital Analytics Consulting",
+                        "serviceType": ["Digital Analytics Consulting", "GTM Consulting", "GA4 Implementation"],
                         "provider": {
                             "@id": "https://sultankautsar.com/#person"
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "name": "Expert Consultancy",
+                            "description": "Flexible hourly consultancy for GTM, GA4, conversion tracking, Consent Mode v2, and server-side tracking.",
+                            "price": "65",
+                            "priceCurrency": "EUR",
+                            "availability": "https://schema.org/InStock",
+                            "url": "https://sultankautsar.com/#pricing",
+                            "priceSpecification": {
+                                "@type": "UnitPriceSpecification",
+                                "price": "65",
+                                "priceCurrency": "EUR",
+                                "unitCode": "HUR"
+                            }
                         },
                         "hasOfferCatalog": {
                             "@type": "OfferCatalog",
                             "name": "GTM & GA4 Services",
                             "itemListElement": [
                                 {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
+                                    "@type": "ListItem",
+                                    "position": 1,
+                                    "item": {
+                                        "@type": "Offer",
                                         "name": "Tracking Integration",
-                                        "description": "Seamlessly deploy tracking codes and pixels across your entire web ecosystem."
+                                        "url": "https://sultankautsar.com/#services",
+                                        "priceCurrency": "EUR",
+                                        "availability": "https://schema.org/InStock",
+                                        "itemOffered": {
+                                            "@type": "Service",
+                                            "name": "Tracking Integration",
+                                            "description": "Seamlessly deploy tracking codes and pixels across your entire web ecosystem."
+                                        }
                                     }
                                 },
                                 {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
+                                    "@type": "ListItem",
+                                    "position": 2,
+                                    "item": {
+                                        "@type": "Offer",
                                         "name": "Conversion Setup",
-                                        "description": "Connect your business goals to actionable data by tracking key user interactions."
+                                        "url": "https://sultankautsar.com/#services",
+                                        "priceCurrency": "EUR",
+                                        "availability": "https://schema.org/InStock",
+                                        "itemOffered": {
+                                            "@type": "Service",
+                                            "name": "Conversion Setup",
+                                            "description": "Connect your business goals to actionable data by tracking key user interactions."
+                                        }
                                     }
                                 },
                                 {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
+                                    "@type": "ListItem",
+                                    "position": 3,
+                                    "item": {
+                                        "@type": "Offer",
                                         "name": "Consent Management",
-                                        "description": "Ensure privacy compliance (GDPR/CCPA) with robust Consent Mode v2 setups."
+                                        "url": "https://sultankautsar.com/#services",
+                                        "priceCurrency": "EUR",
+                                        "availability": "https://schema.org/InStock",
+                                        "itemOffered": {
+                                            "@type": "Service",
+                                            "name": "Consent Management",
+                                            "description": "Ensure privacy compliance (GDPR/CCPA) with robust Consent Mode v2 setups."
+                                        }
                                     }
                                 },
                                 {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
+                                    "@type": "ListItem",
+                                    "position": 4,
+                                    "item": {
+                                        "@type": "Offer",
                                         "name": "GA4 Configuration",
-                                        "description": "Expert Google Analytics 4 setup, event mapping, and legacy migration."
+                                        "url": "https://sultankautsar.com/#services",
+                                        "priceCurrency": "EUR",
+                                        "availability": "https://schema.org/InStock",
+                                        "itemOffered": {
+                                            "@type": "Service",
+                                            "name": "GA4 Configuration",
+                                            "description": "Expert Google Analytics 4 setup, event mapping, and legacy migration."
+                                        }
+                                    }
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 5,
+                                    "item": {
+                                        "@type": "Offer",
+                                        "name": "GTM Container Audit & Cleanup",
+                                        "url": "https://sultankautsar.com/#pricing",
+                                        "priceCurrency": "EUR",
+                                        "availability": "https://schema.org/InStock",
+                                        "itemOffered": {
+                                            "@type": "Service",
+                                            "name": "GTM Container Audit & Cleanup",
+                                            "description": "Audit and optimize GTM containers to improve implementation quality and maintainability."
+                                        }
+                                    }
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 6,
+                                    "item": {
+                                        "@type": "Offer",
+                                        "name": "Server-side Tracking Setup",
+                                        "url": "https://sultankautsar.com/#pricing",
+                                        "priceCurrency": "EUR",
+                                        "availability": "https://schema.org/InStock",
+                                        "itemOffered": {
+                                            "@type": "Service",
+                                            "name": "Server-side Tracking Setup",
+                                            "description": "Implement server-side tracking for more reliable data collection and stronger privacy control."
+                                        }
+                                    }
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 7,
+                                    "item": {
+                                        "@type": "Offer",
+                                        "name": "Enhanced Conversion Setup",
+                                        "url": "https://sultankautsar.com/#pricing",
+                                        "priceCurrency": "EUR",
+                                        "availability": "https://schema.org/InStock",
+                                        "itemOffered": {
+                                            "@type": "Service",
+                                            "name": "Enhanced Conversion Setup",
+                                            "description": "Set up and validate enhanced conversions to improve attribution and campaign performance insights."
+                                        }
+                                    }
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 8,
+                                    "item": {
+                                        "@type": "Offer",
+                                        "name": "General Consultation",
+                                        "url": "https://sultankautsar.com/#pricing",
+                                        "priceCurrency": "EUR",
+                                        "availability": "https://schema.org/InStock",
+                                        "itemOffered": {
+                                            "@type": "Service",
+                                            "name": "General Consultation",
+                                            "description": "Strategic technical consulting to align measurement architecture with business goals."
+                                        }
                                     }
                                 }
                             ]
                         }
+                    },
+                    {
+                        "@type": "ImageObject",
+                        "@id": "https://sultankautsar.com/#hero-image",
+                        "url": "https://sultankautsar.com/img/hero.webp",
+                        "width": 1200,
+                        "height": 630,
+                        "caption": "Google Tag Manager Workflow"
                     },
                     {
                         "@type": "WebPage",
@@ -157,22 +309,16 @@
                         "description": "GTM & GA4 Specialist (5+ yrs). Expert tracking, conversion setup, & Consent Mode v2. Rate: €65/hr.",
                         "inLanguage": "en-US",
                         "isPartOf": {
-                            "@type": "WebSite",
-                            "@id": "https://sultankautsar.com/#website",
-                            "url": "https://sultankautsar.com",
-                            "name": "Sultan Kautsar - GTM Specialist",
-                            "publisher": {
-                                "@id": "https://sultankautsar.com/#person"
-                            }
+                            "@id": "https://sultankautsar.com/#website"
                         },
                         "about": {
                             "@id": "https://sultankautsar.com/#person"
                         },
+                        "mainEntity": {
+                            "@id": "https://sultankautsar.com/#service"
+                        },
                         "primaryImageOfPage": {
-                            "@type": "ImageObject",
-                            "url": "https://sultankautsar.com/img/hero.webp",
-                            "width": 1200,
-                            "height": 630
+                            "@id": "https://sultankautsar.com/#hero-image"
                         }
                     }
                 ]
@@ -506,6 +652,9 @@
                                 <label class="block mb-2 text-sm font-bold text-slate-700 dark:text-slate-300" for="message">Project Details</label>
                                 <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 transition-all bg-white border resize-none rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Tell me about your project and what you need help with..."></textarea>
                             </div>
+                            <div>
+                                <input type="text" name="website" style="display: none" />
+                            </div>
                             <div class="flex items-start gap-3 p-4 border rounded-xl bg-primary/5 border-primary/20">
                                 <span class="text-xl material-symbols-outlined text-primary">info</span>
                                 <div class="text-sm">
@@ -671,36 +820,31 @@
                 e.preventDefault();
                 submitBtn.disabled = true;
                 submitBtn.classList.add("opacity-50", "cursor-not-allowed");
-                submitBtn.innerHTML = `
-                    <svg class="w-5 h-5 text-white animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                    </svg>
-                    <span>Sending...</span>
-                `;
+                submitBtn.innerHTML = `Sending...`;
                 const formData = new FormData(form);
-                const data = Object.fromEntries(formData.entries());
+                const controller = new AbortController();
+                const timeout = setTimeout(() => controller.abort(), 10000);
                 try {
                     const response = await fetch("https://email.sultankautsar.workers.dev/", {
                         method: "POST",
-                        body: JSON.stringify(data),
-                        headers: {
-                            "Content-Type": "application/json",
-                        },
+                        body: formData,
+                        signal: controller.signal,
                     });
+                    clearTimeout(timeout);
                     const result = await response.json();
                     if (response.ok && result.status === "ok") {
-                        showToast("Thank you for your interest! I'll get back to you within 24 hours.", "success");
-                        closeModal();
+                        showToast("Thank you! I'll get back to you within 24 hours.", "success");
                         form.reset();
+                        closeModal();
                         setTimeout(() => {
                             window.location.href = "./thank-you.html";
                         }, 1500);
                     } else {
-                        showToast("Oops! There was a problem submitting your form. Please try again.", "error");
+                        showToast(result.error || "Submission failed", "error");
                     }
                 } catch (error) {
-                    showToast("Oops! There was a problem submitting your form. Please try again.", "error");
+                    console.error(error);
+                    showToast("Network error. Please try again.", "error");
                 } finally {
                     submitBtn.disabled = false;
                     submitBtn.classList.remove("opacity-50", "cursor-not-allowed");
