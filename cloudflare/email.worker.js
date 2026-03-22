@@ -1,7 +1,11 @@
 export default {
     async fetch(request, env) {
+        const allowedOrigins = ["https://sultankautsar.com"];
+        const requestOrigin = request.headers.get("origin") || "";
+        const isOriginAllowed = allowedOrigins.includes(requestOrigin);
+        
         const corsHeaders = {
-            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Origin": isOriginAllowed ? requestOrigin : "",
             "Access-Control-Allow-Methods": "POST, OPTIONS",
             "Access-Control-Allow-Headers": "Content-Type",
         };
@@ -14,11 +18,13 @@ export default {
             const contentType = request.headers.get("content-type") || "";
             let data = {};
 
-            if (contentType.includes("form")) {
+            if (contentType.includes("application/x-www-form-urlencoded") || contentType.includes("multipart/form-data")) {
                 const formData = await request.formData();
                 data = Object.fromEntries(formData.entries());
-            } else {
+            } else if (contentType.includes("application/json")) {
                 data = await request.json();
+            } else {
+                throw new Error("Unsupported content type");
             }
 
             if (data.website) {
@@ -32,15 +38,43 @@ export default {
                 throw new Error("Missing required fields");
             }
 
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
             if (!emailRegex.test(data.email)) {
                 throw new Error("Invalid email format");
+            }
+            
+            if (typeof data.name !== "string" || data.name.trim().length === 0) {
+                throw new Error("Invalid name");
+            }
+            
+            if (typeof data.message !== "string" || data.message.trim().length === 0) {
+                throw new Error("Invalid message");
             }
 
             if (env.RESEND_API_KEY) {
                 const sender = "hello@sultankautsar.com";
 
-                await fetch("https://api.resend.com/emails", {
+                const serviceLabels = {
+                    "tracking-integration": "Tracking Integration",
+                    "conversion-setup": "Conversion Setup",
+                    "consent-management": "Consent Management",
+                    "ga4-configuration": "GA4 Configuration",
+                    "gtm-audit": "GTM Container Audit",
+                    "server-side": "Server-side Tracking",
+                    consultation: "General Consultation",
+                };
+
+                let serviceLabel = "General Inquiry";
+                if (data.service && typeof data.service === "string" && data.service.trim()) {
+                    const serviceName = data.service.trim();
+                    serviceLabel = serviceLabels[serviceName] ||
+                        serviceName
+                            .split("-")
+                            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+                            .join(" ");
+                }
+
+                const resendResponse = await fetch("https://api.resend.com/emails", {
                     method: "POST",
                     headers: {
                         Authorization: `Bearer ${env.RESEND_API_KEY}`,
@@ -51,7 +85,7 @@ export default {
                         to: [data.email],
                         bcc: [sender],
                         reply_to: sender,
-                        subject: `Inquiry confirmation: ${data.service.replace(/-/g, " ").replace(/^./, (str) => str.toUpperCase())} service`,
+                        subject: `Inquiry confirmation: ${serviceLabel} service`,
                         html: `
                             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; background-color: #f4f4f4;">
                                 <tr>
@@ -64,7 +98,7 @@ export default {
                                                 <td style="padding: 24px; color: #000000; font-size: 13px; line-height: 1.5;">
                                                     <h2 style="color: #1152d4; margin: 0 0 24px 0; font-size: 18px;">Thank you for reaching out!</h2>
                                                     <p style="margin: 0 0 10px 0;">Hello ${data.name},</p>
-                                                    <p style="margin: 0 0 24px 0;">I have received your inquiry regarding <strong>${data.service.replace(/-/g, " ")}</strong>. I will review your project details and get back to you within <b>24 hours</b>.</p>
+                                                    <p style="margin: 0 0 24px 0;">I have received your inquiry regarding <strong>${serviceLabel}</strong>. I will review your project details and get back to you within <b>24 hours</b>.</p>
                                                     <h3 style="color: #1152d4; font-size: 14px; margin: 0 0 10px 0; border-bottom: 2px solid #f0f0f0; padding-bottom: 8px;">Next steps</h3>
                                                     <ul style="padding: 0 0 0 20px; margin: 0 0 20px 0; color: #333333;">
                                                         <li style="margin-bottom: 8px;"><strong style="color: #1152d4;">Review your request:</strong> I'll carefully review your project details and requirements to understand your specific goals.</li>
@@ -98,6 +132,12 @@ export default {
                         `,
                     }),
                 });
+                
+                if (!resendResponse.ok) {
+                    const resendError = await resendResponse.text();
+                    console.error("Resend API error:", resendError);
+                    throw new Error("Failed to send email");
+                }
             }
 
             return new Response(JSON.stringify({ status: "ok" }), {
@@ -105,7 +145,9 @@ export default {
                 headers: { ...corsHeaders, "Content-Type": "application/json" },
             });
         } catch (err) {
-            return new Response(JSON.stringify({ error: err.message }), {
+            console.error("Email worker error:", err);
+            
+            return new Response(JSON.stringify({ error: "An error occurred. Please try again later." }), {
                 status: 500,
                 headers: { ...corsHeaders, "Content-Type": "application/json" },
             });
