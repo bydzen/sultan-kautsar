@@ -9,6 +9,7 @@
     },
     "scripts": {
         "dev": "tailwindcss -i ./public/input.css -o ./public/output.css --watch",
-        "build": "tailwindcss -i ./public/input.css -o ./public/output.css --minify"
+        "build": "tailwindcss -i ./public/input.css -o ./public/output.css --minify",
+        "watch": "tailwindcss -i ./public/input.css -o ./public/output.css --watch --minify"
     }
 }
