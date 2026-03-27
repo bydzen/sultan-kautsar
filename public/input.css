@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/container-queries";
+
 @theme {
     --color-primary: #1152d4;
     --color-background-light: #f6f6f8;
@@ -8,3 +9,48 @@
     --font-display: "Inter", ui-sans-serif, system-ui;
 }
 @custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+    .section-container {
+        @apply max-w-[1200px] w-full;
+    }
+    .section-padding {
+        @apply px-6 py-20;
+    }
+    .text-muted {
+        @apply text-slate-600 dark:text-slate-400;
+    }
+    .text-strong {
+        @apply text-slate-900 dark:text-slate-100;
+    }
+    .surface-card {
+        @apply bg-white border border-slate-200 rounded-xl dark:border-slate-800 dark:bg-background-dark;
+    }
+    .icon-chip {
+        @apply flex items-center justify-center rounded-xl size-12 bg-primary/10 text-primary;
+    }
+    .btn-primary {
+        @apply font-bold text-white transition-all rounded-xl bg-primary hover:opacity-90 hover:cursor-pointer;
+    }
+    .btn-primary-solid {
+        @apply font-bold text-white transition-all rounded-xl bg-primary hover:opacity-90 hover:cursor-pointer shadow-lg shadow-primary/20 hover:scale-[1.02];
+    }
+    .btn-outline {
+        @apply border-2 rounded-xl border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900 hover:cursor-pointer hover:scale-[1.02] transition-all;
+    }
+    .nav-link {
+        @apply text-sm font-medium transition-colors text-slate-700 dark:text-slate-300 hover:text-primary;
+    }
+    .service-card {
+        @apply flex flex-col gap-4 p-6 transition-shadow bg-white border border-slate-200 rounded-xl dark:border-slate-800 dark:bg-background-dark hover:shadow-lg hover:shadow-primary/10;
+    }
+    .form-label {
+        @apply block mb-2 text-sm font-bold text-slate-700 dark:text-slate-300;
+    }
+    .form-control {
+        @apply w-full px-4 py-3 transition-all bg-white border rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-transparent;
+    }
+    .social-link {
+        @apply hover:text-primary;
+    }
+}
